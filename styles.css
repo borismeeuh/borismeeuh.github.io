@@ -3,6 +3,13 @@ body {
     background: #222;
 }
 
+h1 {
+    max-width: 20%;
+    margin-right: 0;
+    padding-right: 0;
+    display:inline-block;
+}
+
 .container {
     width: 80%
     margin: 0 auto;
@@ -16,6 +23,7 @@ header ::after {
 
 nav {
    float: right;  
+   margin-top: 25px;
 }
 
 
@@ -28,7 +36,7 @@ list-style: none;
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 10px;
+    padding-top: 0px;
 
     position: relative; 
 }
@@ -36,6 +44,8 @@ nav li {
 nav a {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -43,21 +53,20 @@ nav a:hover {
 
 }
 
-nav a ::before {
+nav a::before {
     content: '';
     display: block;
     height: 5px;
-    width: 100%;
     background-color: #444;
 
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 0%;
 
     transition: all ease-in-out 250ms;
 
 }
 
-nav a :hover ::before {
+nav a:hover::before {
     width: 100%;
 }
