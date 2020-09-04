@@ -8,7 +8,7 @@ body {
     background-attachment: fixed;
 }
 
-/*start van hover menu*/ 
+/*hover menu*/ 
 
 h1 {
     max-width: 20%;
@@ -78,15 +78,13 @@ nav a:hover::before {
     width: 100%;
 }
 
-/*start van slideshow*/
+/*slideshow*/
 
 .slidershow{
     width: 275px;
     height: 265px;
     overflow: hidden;
     border: 3px solid rgba(0, 0, 0, 0.4);
-    padding: 3px;
-
 }
 
 .middle{
@@ -162,7 +160,7 @@ input[name="r"]{
    width: 100%;
 }
 
-/*start van tabel*/
+/*tabel*/
 
 #t01 tr:nth-child(even) {
     background-color: lightgray;
@@ -186,5 +184,95 @@ ul a{
     width: 900px; 
     height: 500px;
     padding: 3px;
+}
+
+/*image1*/
+
+.container2{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 250px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.image1{
+    width: 500px;
+    height: 350px;
+    transition: all 0.5s ease-in;
+}
+
+span{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 30px;
+    bottom: 50px;
+    right: 0px;
+    margin: 2px;
+    padding: 3px 0px;
+    font-size: 0px;
+    transform: translateY(50px);
+    opacity: 1;
+    font-weight: 300px;
+}
+
+.container2:hover .image1{
+    transform: scale(1.4);
+    transition: all 1s ease-in;
+    filter: brightness(.5);
+}
+
+.container2:hover span{
+    transform: translateY(-35px);
+    font-size: 30px;
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+/*image2*/
+
+.container3{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 250px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.image2{
+    width: 500px;
+    height: 350px;
+    transition: all 0.5s ease-in;
+}
+
+span{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 30px;
+    bottom: 50px;
+    right: 0px;
+    margin: 2px;
+    padding: 3px 0px;
+    font-size: 0px;
+    transform: translateY(50px);
+    opacity: 1;
+    font-weight: 300px;
+}
+
+.container3:hover .image2{
+    transform: scale(1.4);
+    transition: all 1s ease-in;
+    filter: brightness(.5);
+}
+
+.container3:hover span{
+    transform: translateY(-35px);
+    font-size: 20px;
+    opacity: 1;
+    transition: all 1s ease-in;
 }
 
