@@ -5,8 +5,6 @@
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 
 <header>
     <div class="container">
@@ -84,6 +82,44 @@
 
 
 </table>  
+
+<br>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Study Points', 'Required'],
+          ['1',  0,      45],
+          ['2',  0,      45],
+          ['3',  0,      45],
+          ['4',  0,      45],
+          ['5',  0,      45],
+          ['6',  0,      45],
+          ['7',  0,      45],
+          ['8',  0,      45],
+          ['9',  0,      45],
+          ['10',  0,      45],
+          ['11',  0,      45],
+          ['12',  0,      45],
+        ]);
+
+        var options = {
+          title: 'Study Points',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+<div id="curve_chart"></div>
 
     
 </body>
