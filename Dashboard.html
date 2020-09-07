@@ -37,49 +37,142 @@
         Relevant links
     </h2>   
         
-     <ul id="list1">
+     <ul id="list1" style="list-style: circle;">
         <li><a href="https://hz.nl/" target="_blank">HZ home page</a></li>
         <li><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen" target="_blank">Course and Examination regulations</a></li>
         <li><a href="https://learn.hz.nl/my/" target="_blank">Learn</a></li>
         <li><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">Study Progress</a></li>
         <li><a href="https://github.com/" target="_blank">Github</a></li>
         <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">Basic HTML codes</a></li>
-
-        
-
     </ul>
+
 <table id="t01">
     
     <tr>
+        <th>Quartile</th>
         <th>Course</th>
-        <th>Status</th>
+        <th>EC </th>
+        <th>Exam</th>
         <th>Grade</th>
     </tr>
 
     <tr>
-        <td>Computer Science basics</td>
-        <td>In Progress</td>
+        <td rowspan="3"><strong>1</strong></td>
+        <td>Programme and Career Orientation</td>
+        <td>2.5</td>
+        <td>Assesment</td>
         <td></td>
     </tr>
 
     <tr>
-        <td>Programming basics</td>
-        <td>not yet started</td>
+        <td>Science Basics</td>
+        <td>7.5</td>
+        <td>Written</td>
         <td></td>
     </tr>
 
     <tr>
-        <td>Evaluation</td>
-        <td>not yet started</td>
+        <td>Programming Basics</td>
+        <td>5</td>
+        <td>Case Study</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="3"><strong>2</strong></td>
+        <td rowspan="2">Object Oriented Programming</td>
+        <td rowspan="2">10</td>
+        <td>Case Study</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Project</td>
         <td></td>
     </tr>
 
     <tr>
         <td>Professional Skills</td>
-        <td>not yet started</td>
+        <td>2.5</td>
+        <td>Portfolio</td>
         <td></td>
     </tr>
 
+    <tr>
+        <td rowspan="7"> <strong>3</strong></td>
+        <td rowspan="2">Framework Project 1</td>
+        <td rowspan="2">5</td>
+        <td>Portfolio exam 1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Portfolio exam 2</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Framework Development 1</td>
+        <td>5</td>
+        <td>Case Study</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Professional Working Environment</td>
+        <td>2.5</td>
+        <td>Assesment</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Professional Skills 2</td>
+        <td rowspan="3">2.5</td>
+        <td>Portfolio exam</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Written exams 1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Written exams 2</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="5"><strong>4</strong></td>
+        <td>Framework Project 2</td>
+        <td>5</td>
+        <td>Portfolio exam</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Framework Development 2</td>
+        <td>5</td>
+        <td>Portfolio exam</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Professional Skills 3</td>
+        <td rowspan="3">2.5</td>
+        <td>Portfolio exam</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Written exam 1</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Written exam 2</td>
+        <td></td>
+    </tr>
 
 </table>  
 
@@ -92,19 +185,19 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Month', 'Study Points', 'Required'],
-          ['1',  0,      45],
-          ['2',  0,      45],
-          ['3',  0,      45],
-          ['4',  0,      45],
-          ['5',  0,      45],
-          ['6',  0,      45],
-          ['7',  0,      45],
-          ['8',  0,      45],
-          ['9',  0,      45],
-          ['10',  0,      45],
-          ['11',  0,      45],
-          ['12',  0,      45],
+          ['Month', 'Study Points', 'Minimum', 'Goal'],
+          ['1',  0,      45, 60],
+          ['2',  0,      45, 60],
+          ['3',  0,      45, 60],
+          ['4',  0,      45, 60],
+          ['5',  0,      45, 60],
+          ['6',  0,      45, 60],
+          ['7',  0,      45, 60],
+          ['8',  0,      45, 60],
+          ['9',  0,      45, 60],
+          ['10',  0,      45, 60],
+          ['11',  0,      45, 60],
+          ['12',  0,      45, 60],
         ]);
 
         var options = {
