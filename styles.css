@@ -2,7 +2,7 @@ body {
     margin: 10px;
     padding: 10px;
     background-image:
-    linear-gradient(to bottom, rgba(247, 247, 247, 0.55), rgba(255, 255, 255, 0.55)),
+    linear-gradient(to bottom, rgba(247, 247, 247, 0.7), rgba(255, 255, 255, 0.7)),
     url(https://i.pinimg.com/originals/c5/8f/38/c58f38888f4ba5ecb9b0f9bc3dca96ec.jpg);
     font-family:'Roboto', sans-serif;
     background-attachment: fixed;
@@ -286,3 +286,21 @@ span{
     transition: all 1s ease-in;
 }
 
+.container4{
+    height: 425px;
+    width: 750px;
+    position: absolute;
+    top: 110%;
+    left: 48%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 3px groove rgba(0, 0, 0, 0.7);
+}
+
+.container5{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 116.5%;
+    border-radius: 5%;
+}
