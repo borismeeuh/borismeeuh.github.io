@@ -89,15 +89,15 @@ nav a:hover::before {
 /*slideshow*/
 
 .slidershow{
-    width: 275px;
-    height: 265px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .middle{
     position: absolute;
-    top: 105%;
+    top: 90%;
     left: 80%;
     transform: translate(-50%, -50%);
 }
@@ -286,6 +286,7 @@ span{
     transition: all 1s ease-in;
 }
 
+/*text boxes*/
 .container4{
     height: 425px;
     width: 750px;
@@ -303,4 +304,9 @@ span{
     position: absolute;
     top: 116.5%;
     border-radius: 5%;
+}
+
+.container6{
+    height: 150px;
+    width: 750px;
 }
