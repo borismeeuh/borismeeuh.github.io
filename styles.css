@@ -65,7 +65,6 @@ nav a {
 
 nav a:hover {
     color: rgb(255, 255, 255);
-
 }
 
 nav a::before {
@@ -204,7 +203,7 @@ ul a{
     position: relative;
     margin: 10px;
     margin-bottom: 250px;
-    margin-left: 150px;
+    margin-left: 100px;
     cursor: pointer;
 }
 
@@ -247,8 +246,10 @@ span{
     width: 200px;
     height: 100px;
     position: relative;
+    left: 50%;
+    top: -350px;
     margin: 10px;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     margin-left: 150px;
     cursor: pointer;
 }
@@ -416,7 +417,8 @@ span{
 
 .footerlink:hover{
     font-size: xx-large;
-    color: rgb(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
 }
 
 .footerbottom{
@@ -430,8 +432,18 @@ span{
     padding-top: 10px;
 }
 
+/* clock */
+.mainContainer{
+    width: 500px;
+    height: 150px;
+    position: relative;
+    left: 60%;
+    top: 200px;
+}
 
-
-
-
-
+#clock{
+    width: 100%;
+    position: absolute;
+    font-size: x-large;
+    color: black;
+}
