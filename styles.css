@@ -371,7 +371,7 @@ span{
 .footer{
     background: rgba(255, 255, 255, 0.92);
     color: black;
-    height: 400px;
+    height: 350px;
     width: 1519px;
     position: relative;
     padding-top: 12.5px;    
@@ -412,13 +412,12 @@ span{
 .footerlink{
     list-style: none;
     padding-top: 10px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .footerlink:hover{
     font-size: xx-large;
     color: white;
-    text-transform: capitalize;
 }
 
 .footerbottom{
@@ -432,18 +431,47 @@ span{
     padding-top: 10px;
 }
 
-/* clock */
-.mainContainer{
-    width: 500px;
-    height: 150px;
+#photo1{
     position: relative;
-    left: 60%;
-    top: 200px;
+    left: 37.5px;
+    top: 12px;
+    height: 200px; 
+    width: 200px;
+    border: solid rgba(0, 0, 0, 0.5) 5px;
 }
 
-#clock{
-    width: 100%;
-    position: absolute;
-    font-size: x-large;
-    color: black;
+#photo2{
+    position: relative;
+    left: 7.7%;
+    top: 12px;
+    height: 200px; 
+    width: 200px;
+    border: solid rgba(0, 0, 0, 0.5) 5px;
+}
+
+#photo3{
+    position: relative;
+    left: 12.75%;
+    top: 12px;
+    height: 200px; 
+    width: 200px;
+    border: solid rgba(0, 0, 0, 0.5) 5px;
+}
+
+#photo4{
+    position: relative;
+    left: 17.75%;
+    top: 12px;
+    height: 200px; 
+    width: 200px;
+    border: solid rgba(0, 0, 0, 0.5) 5px;
+}
+
+#photo5{
+    position: relative;
+    left: 22.75%;
+    top: 12px;
+    height: 200px; 
+    width: 200px;
+    border: solid rgba(0, 0, 0, 0.5) 5px;
 }
