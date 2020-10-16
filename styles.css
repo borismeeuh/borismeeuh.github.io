@@ -433,13 +433,19 @@ span{
     padding-top: 10px;
 }
 
+/* company logos */
 #photo1{
     position: relative;
     left: 37.5px;
     top: 12px;
     height: 200px; 
     width: 200px;
-    border: solid rgba(0, 0, 0, 0.5) 5px;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    transition: all ease-in 0.2s;
+}
+#photo1:hover{
+    width: 210px;
+    height: 210px;
 }
 
 #photo2{
@@ -448,7 +454,12 @@ span{
     top: 12px;
     height: 200px; 
     width: 200px;
-    border: solid rgba(0, 0, 0, 0.5) 5px;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    transition: all ease-in 0.2s;
+}
+#photo2:hover{
+    width: 210px;
+    height: 210px;
 }
 
 #photo3{
@@ -457,7 +468,13 @@ span{
     top: 12px;
     height: 200px; 
     width: 200px;
-    border: solid rgba(0, 0, 0, 0.5) 5px;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    transition: all ease-in 0.2s;
+}
+
+#photo3:hover{
+    width: 210px;
+    height: 210px;
 }
 
 #photo4{
@@ -466,7 +483,13 @@ span{
     top: 12px;
     height: 200px; 
     width: 200px;
-    border: solid rgba(0, 0, 0, 0.5) 5px;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    transition: all ease-in 0.2s;
+}
+
+#photo4:hover{
+    width: 210px;
+    height: 210px;
 }
 
 #photo5{
@@ -475,5 +498,11 @@ span{
     top: 12px;
     height: 200px; 
     width: 200px;
-    border: solid rgba(0, 0, 0, 0.5) 5px;
+    border: solid rgba(0, 0, 0, 0.5) 2px;
+    transition: all ease-in 0.2s;
+}
+
+#photo5:hover{
+    width: 210px;
+    height: 210px;
 }
