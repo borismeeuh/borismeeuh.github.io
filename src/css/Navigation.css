@@ -1,0 +1,53 @@
+section {
+    --navText: "";
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;   
+    justify-content: center;
+    padding: 0 32px;
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    z-index: 2;
+}
+
+.navigation-icon {
+    aspect-ratio: 1/1;
+    background-color: white;
+    opacity: .25;
+    border-radius: 50%;
+    height: 12px;
+    transition: .1s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.navigation-icon:hover {
+    transform: scale(1.25);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.navigation-icon:hover:after {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    content: attr(nav-text);
+    font-size: 12px;
+    padding: 4px 8px;
+    position: absolute;
+    right: 150%;
+    top: -50%;    
+}
+
+.navigation-icon-active {
+    aspect-ratio: 1/1;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    height: 12px;
+    opacity: 1;
+}

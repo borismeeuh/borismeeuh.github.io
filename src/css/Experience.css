@@ -1,0 +1,33 @@
+.experience {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.experience-list-item {
+    display: flex;
+    position: relative;
+    gap: 16px;
+    align-items: center;
+    color: white;
+}
+
+.experience-checkmark {
+    height: 24px;
+}
+
+.experience-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-checkmark {
+    fill: white;
+}

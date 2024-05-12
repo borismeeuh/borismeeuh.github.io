@@ -1,0 +1,99 @@
+.education {
+    background-image: url(../images/Education-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    padding-bottom: 32px;
+    position: relative;
+    width: 100%;    
+}
+
+.education:after {
+    background-color: black;
+    content: "";
+    height: 100%;
+    opacity: .6;
+    position: absolute;
+    width: 100%;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; 
+    padding: 40px 0;
+    width: 85%;
+    z-index: 1;
+}
+
+.education-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+.education-block-left,
+.education-block-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    row-gap: 16px;
+    width: 50%;
+}
+
+.education-blocks:before {
+    background-color: white;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.education-blocks:after {
+    background-color: white;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.education-block {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.education-block-content {
+    display: flex;
+    gap: 16px;
+    height: 100%;
+}
+
+.education-block-img {
+    align-items: center;    
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 32px;
+}
+
+.education-block-img img {
+    width: 32px;
+}
+
+.education-block-text {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 90%;
+}

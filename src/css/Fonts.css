@@ -1,0 +1,47 @@
+.title {
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    width: fit-content;
+}
+
+.title::after {
+    border: 1px var(--secondary) solid;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.subtitle {
+    margin: 0;
+    font-weight: 100;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.paragraph {
+    color: white;
+    font-weight: 300;
+    font-size: larger;
+}
+
+.link {
+    background-image: linear-gradient(var(--secondary) 0 0);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    padding-bottom: 2px;
+    text-decoration: none;
+    transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+.link:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}

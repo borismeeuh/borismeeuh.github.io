@@ -1,0 +1,71 @@
+section {
+    --circleColour: transparent;
+}
+
+.skills {
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 0;
+    width: 85%;
+}
+
+.skills-cols {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.skills-col-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    height: fit-content;
+    width: 33%;
+}
+
+.skills-col-middle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    height: fit-content;
+    width: 33%;
+    position: relative;
+}
+
+.skills-col-middle:before {
+    border-left: 1px solid white;
+    bottom: 0;
+    content: "";
+    height: 85%;
+    position: absolute;
+}
+
+.skills-col-middle:after {
+    border-right: 1px solid white;
+    bottom: 0;
+    content: "";
+    height: 85%;
+    position: absolute;
+    right: 0;
+}
+
+.skills-col-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    height: fit-content;
+    width: 33%;
+}
+
