@@ -4,7 +4,17 @@ import ScrollIntoView from "react-scroll-into-view";
 function Hero() {
     return (
         <div className="hero" id="hero">
-            <div className="hero-overlay"></div>
+            <div className="hero-overlay">
+                <div className="planet1">
+                    <div className="planet1-ring"></div>
+                </div>
+                <div className="planet2">
+                    <div className="planet2-ring"></div>
+                </div>
+                <div className="planet3">
+                    <div className="planet3-ring"></div>
+                </div>
+            </div>
             <div className="hero-content">
                 <div className="hero-text">
                     <div className="hero-title title">

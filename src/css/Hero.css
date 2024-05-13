@@ -1,7 +1,14 @@
 .hero {
-    background-image: url(../images/HeroWallpaper.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(235deg,
+            hsl(214deg 97% 36%) 0%,
+            hsl(234deg 40% 35%) 6%,
+            hsl(251deg 26% 23%) 15%,
+            hsl(260deg 11% 15%) 28%,
+            hsl(260deg 11% 15%) 43%,
+            hsl(260deg 11% 15%) 59%,
+            hsl(251deg 26% 23%) 75%,
+            hsl(234deg 40% 35%) 89%,
+            hsl(214deg 97% 36%) 100%);
     color: white;
     height: 100vh;
     width: 100%;
@@ -11,7 +18,7 @@
     background-color: black;
     height: 100%;
     opacity: .6;
-    position: absolute;     
+    position: absolute;
     width: 100%;
 }
 
@@ -54,9 +61,154 @@
 }
 
 @keyframes verticalMovement {
-    0% {bottom: 30px}
-    50% {bottom: 20px}
-    100% {bottom: 30px}
+    0% {
+        bottom: 30px
+    }
+
+    50% {
+        bottom: 20px
+    }
+
+    100% {
+        bottom: 30px
+    }
 }
 
+.planet1 {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    top: 15%;
+    left: 15%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    box-shadow: inset var(--dark) -20px -20px 70px;
+    animation: planet 10s linear infinite;
+}
 
+.planet1-ring {
+    width: 150%;
+    height: 150%;
+    border: solid 24px var(--dark);
+    border-radius: 50%;
+    top: -25%;
+    left: -25%;
+    position: absolute;
+    transform: rotate3d(0.8, 0.7, .5, 75deg);
+    box-sizing: border-box;
+    opacity: .5;
+}
+
+.planet1-ring:hover:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 25px var(--dark);
+    top: -5%;
+    left: -5%;
+    animation: pulse 2s linear;
+}
+
+.planet2 {
+    width: 5%;
+    aspect-ratio: 1/1;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    top: -25%;
+    left: 85%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    box-shadow: inset var(--dark) -20px -20px 70px;
+    animation: planet 7.5s linear infinite;
+}
+
+.planet2-ring {
+    width: 150%;
+    height: 150%;
+    border: solid 5px var(--secondary);
+    border-radius: 50%;
+    top: -25%;
+    left: -25%;
+    position: absolute;
+    transform: rotate3d(0.75, 0.1, .1, 240deg);
+    box-sizing: border-box;
+    opacity: .5;
+}
+
+.planet2-ring:hover:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 5px var(--secondary);
+    top: -5%;
+    left: -5%;
+    animation: pulse 1s linear;
+}
+
+.planet3 {
+    width: 10%;
+    aspect-ratio: 1/1;
+    background-color: var(--dark);
+    border-radius: 50%;
+    top: 5%;
+    left: 65%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    box-shadow: inset var(--dark) -20px -20px 70px;
+    animation: planet 12s linear infinite;
+}
+
+.planet3-ring {
+    width: 150%;
+    height: 150%;
+    border: solid 15px var(--secondary);
+    border-radius: 50%;
+    top: -25%;
+    left: -25%;
+    position: absolute;
+    transform: rotate3d(0.75, 0.1, 0.75, 270deg);
+    box-sizing: border-box;
+    opacity: .5;
+}
+
+.planet3-ring:hover:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 15px var(--secondary);
+    top: -7.5%;
+    left: -7.5%;
+    animation: pulse 1s linear;
+}
+
+@keyframes planet {
+    0% {
+        transform: rotate(0deg) translateY(10px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(10px) rotate(-360deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
