@@ -75,120 +75,127 @@
 }
 
 .planet1 {
-    width: 20%;
+    animation: planet 10s linear infinite;
     aspect-ratio: 1/1;
     background-color: var(--secondary);
     border-radius: 50%;
-    top: 15%;
-    left: 15%;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
     box-shadow: inset var(--dark) -20px -20px 70px;
-    animation: planet 10s linear infinite;
+    left: 15%;
+    perspective: 1000px;
+    position: relative;
+    top: 15%;
+    transform-style: preserve-3d;
+    width: 20%;
 }
 
 .planet1-ring {
-    width: 150%;
-    height: 150%;
-    border: solid 24px var(--dark);
     border-radius: 50%;
-    top: -25%;
-    left: -25%;
-    position: absolute;
-    transform: rotate3d(0.8, 0.7, .5, 75deg);
+    border: solid 24px var(--dark);
     box-sizing: border-box;
+    height: 150%;
+    left: -25%;
     opacity: .5;
+    position: absolute;
+    top: -25%;
+    transform: rotate3d(0.8, 0.7, .5, 75deg);
+    width: 150%;
 }
 
-.planet1-ring:hover:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
+.planet1-ring:after {
+    animation: pulse 15s linear infinite;
+    animation-delay: 1s;
     border-radius: 50%;
     border: solid 25px var(--dark);
-    top: -5%;
+    content: "";
+    height: 100%;
     left: -5%;
-    animation: pulse 2s linear;
+    opacity: 0;
+    position: absolute;
+    top: -5%;
+    width: 100%;
 }
 
 .planet2 {
-    width: 5%;
+    animation: planet 7.5s linear infinite;
     aspect-ratio: 1/1;
     background-color: var(--secondary);
     border-radius: 50%;
-    top: -25%;
-    left: 85%;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
     box-shadow: inset var(--dark) -20px -20px 70px;
-    animation: planet 7.5s linear infinite;
+    left: 85%;
+    perspective: 1000px;
+    position: relative;
+    top: -25%;
+    transform-style: preserve-3d;
+    width: 5%;
 }
 
 .planet2-ring {
-    width: 150%;
-    height: 150%;
-    border: solid 5px var(--secondary);
     border-radius: 50%;
-    top: -25%;
-    left: -25%;
-    position: absolute;
-    transform: rotate3d(0.75, 0.1, .1, 240deg);
+    border: solid 5px var(--secondary);
     box-sizing: border-box;
+    height: 150%;
+    left: -25%;
     opacity: .5;
+    position: absolute;
+    top: -25%;
+    transform: rotate3d(0.75, 0.1, .1, 240deg);
+    width: 150%;
 }
 
-.planet2-ring:hover:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
+.planet2-ring:after {
+    animation: pulse 8s linear infinite;
+    animation-delay: 2s;
     border-radius: 50%;
     border: solid 5px var(--secondary);
-    top: -5%;
+    content: "";
+    height: 100%;
     left: -5%;
-    animation: pulse 1s linear;
+    opacity: 0;
+    position: absolute;
+    top: -5%;
+    width: 100%;
 }
 
 .planet3 {
-    width: 10%;
+    animation: planet 12s linear infinite;
     aspect-ratio: 1/1;
     background-color: var(--dark);
     border-radius: 50%;
-    top: 5%;
-    left: 65%;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
     box-shadow: inset var(--dark) -20px -20px 70px;
-    animation: planet 12s linear infinite;
+    left: 65%;
+    perspective: 1000px;
+    position: relative;
+    top: 5%;
+    transform-style: preserve-3d;
+    width: 10%;
+    transition: 1s linear;
 }
 
 .planet3-ring {
-    width: 150%;
-    height: 150%;
-    border: solid 15px var(--secondary);
     border-radius: 50%;
-    top: -25%;
-    left: -25%;
-    position: absolute;
-    transform: rotate3d(0.75, 0.1, 0.75, 270deg);
+    border: solid 15px var(--secondary);
     box-sizing: border-box;
+    height: 150%;
+    left: -25%;
     opacity: .5;
+    position: absolute;
+    top: -25%;
+    transform: rotate3d(0.75, 0.1, 0.75, 270deg);
+    width: 150%;
 }
 
-.planet3-ring:hover:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
+.planet3-ring:after {
+    animation: pulse 12s linear infinite;
+    animation-delay: 3s;
     border-radius: 50%;
     border: solid 15px var(--secondary);
-    top: -7.5%;
+    content: "";
+    height: 100%;
     left: -7.5%;
-    animation: pulse 1s linear;
+    opacity: 0;
+    position: absolute;
+    top: -7.5%;
+    width: 100%;
 }
 
 @keyframes planet {
@@ -202,13 +209,12 @@
 }
 
 @keyframes pulse {
-    from {
-        transform: scale(1);
+    0% {
         opacity: 1;
+        transform: scale(1);
     }
-
-    to {
-        transform: scale(2);
+    20% {
         opacity: 0;
+        transform: scale(2);
     }
 }
