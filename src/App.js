@@ -1,9 +1,9 @@
+import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
-import Skills from "./components/Skills";
 import Navigation from "./components/Navigation";
-import Education from "./components/Education";
-import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 
 function App() {
     return (
