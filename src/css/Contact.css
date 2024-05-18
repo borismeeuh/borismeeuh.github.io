@@ -1,7 +1,16 @@
 .contact {
     display: flex;
-    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 200vh;
     width: 100%;
+}
+
+@media (min-width: 992px) {
+    .contact {
+        flex-direction: row;
+        height: 100vh;
+    }
 }
 
 .contact-animation-wrapper {
@@ -20,10 +29,55 @@
 .contact-animation-blob4,
 .contact-animation-blob5 {
     aspect-ratio: 1/1;
-    height: 77.5%;
+    height: 30%;
     opacity: .75;
     position: absolute;
     transition: .1s linear;
+}
+
+@media (min-width: 576px) {
+
+    .contact-animation-blob1,
+    .contact-animation-blob2,
+    .contact-animation-blob3,
+    .contact-animation-blob4,
+    .contact-animation-blob5 {
+        height: 40%;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .contact-animation-blob1,
+    .contact-animation-blob2,
+    .contact-animation-blob3,
+    .contact-animation-blob4,
+    .contact-animation-blob5 {
+        height: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .contact-animation-blob1,
+    .contact-animation-blob2,
+    .contact-animation-blob3,
+    .contact-animation-blob4,
+    .contact-animation-blob5 {
+        height: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .contact-animation-blob1,
+    .contact-animation-blob2,
+    .contact-animation-blob3,
+    .contact-animation-blob4,
+    .contact-animation-blob5 {
+        height: 77.5%;
+    }
 }
 
 .contact-animation-blob1:after {
@@ -31,7 +85,7 @@
     aspect-ratio: 1/1;
     background-color: white;
     content: "";
-    filter: blur(15px);
+    filter: blur(5px);
     height: 75%;
     left: 17.5%;
     position: absolute;
@@ -55,7 +109,7 @@
     aspect-ratio: 1/1;
     background-color: white;
     content: "";
-    filter: blur(15px);
+    filter: blur(5px);
     height: 75%;
     left: 17.5%;
     position: absolute;
@@ -79,7 +133,7 @@
     aspect-ratio: 1/1;
     background-color: white;
     content: "";
-    filter: blur(15px);
+    filter: blur(5px);
     height: 75%;
     left: 17.5%;
     position: absolute;
@@ -103,7 +157,7 @@
     aspect-ratio: 1/1;
     background-color: white;
     content: "";
-    filter: blur(15px);
+    filter: blur(5px);
     height: 75%;
     left: 17.5%;
     position: absolute;
@@ -127,7 +181,7 @@
     aspect-ratio: 1/1;
     background-color: white;
     content: "";
-    filter: blur(15px);
+    filter: blur(5px);
     height: 70%;
     left: 20%;
     position: absolute;
@@ -144,6 +198,17 @@
     left: 15%;
     position: absolute;
     top: 15%;
+}
+
+@media (min-width: 768px) {
+
+    .contact-animation-blob1:after,
+    .contact-animation-blob2:after,
+    .contact-animation-blob3:after,
+    .contact-animation-blob4:after,
+    .contact-animation-blob5:after {
+        filter: blur(15px);
+    }
 }
 
 @keyframes blob {
@@ -261,7 +326,7 @@
     width: 25%;
 }
 
-.contact-form-submit{
+.contact-form-submit {
     align-items: center;
     background-color: transparent;
     border-radius: 4px;
@@ -295,34 +360,37 @@
     padding-top: 300%;
     position: absolute;
     transition: all 1s;
-  }
-  
-  .contact-form-submit:active:after {
+}
+
+.contact-form-submit:active:after {
     border-radius: 50%;
     margin: 0;
     opacity: .75;
     padding: 0;
     transition: 0s;
-  }
+}
 
 @keyframes plane {
     0% {
         transform: translate(0, 0);
         opacity: 1;
     }
+
     33% {
         transform: translate(100px, -100px);
         opacity: 0;
     }
+
     66% {
         transform: translate(-100px, 100px);
         opacity: 0;
     }
+
     100% {
         transform: translate(0, 0);
         opacity: 1;
     }
-    
+
 }
 
 .contact-form-submit img {
@@ -340,8 +408,6 @@
     width: fit-content;
     z-index: 1;
 }
-
-
 
 .contact-info-spacer {
     display: flex;

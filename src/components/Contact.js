@@ -1,4 +1,4 @@
-import linkedIn from "../images/svg/linkedin-app-icon.svg";
+import linkedIn from "../images/svg/linkedin-icon.svg";
 import email from "../images/svg/email-icon.svg";
 import plane from "../images/svg/plane-icon.svg";
 

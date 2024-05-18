@@ -29,7 +29,9 @@ function SoftSkills() {
                         />
                     </div>
                     <div className="experience-text">
-                        <div className="paragraph">Strong work ethic and critical thinker</div>
+                        <div className="paragraph">
+                            Strong work ethic and critical thinker
+                        </div>
                     </div>
                 </li>
                 <li className="softSkills-list-item">

@@ -19,7 +19,6 @@ function Experience() {
                                 Intern Front-End Developer at
                             </span>
                             <span className="paragraph">
-                                {" "}
                                 <a href="#" className="link">
                                     XSARUS
                                 </a>
