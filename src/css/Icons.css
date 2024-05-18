@@ -57,8 +57,8 @@
 .icon img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: .3s linear;
     height: 30px;
+    transition: .3s linear;
     width: 30px;
 }
 

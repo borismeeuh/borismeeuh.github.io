@@ -102,6 +102,7 @@
 }
 
 .education-block-content {
+    align-items: center;
     display: flex;
     gap: 16px;
     height: 100%;
