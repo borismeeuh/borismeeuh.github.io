@@ -16,7 +16,7 @@
 
 .hero-overlay {
     background-color: black;
-    height: 100%;
+    height: 100dvh;
     opacity: .6;
     position: absolute;
     width: 100%;
