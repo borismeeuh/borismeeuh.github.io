@@ -330,7 +330,9 @@
     background-color: transparent;
     border-radius: 4px;
     border: 2px solid var(--secondary);
+    color: white;
     display: flex;
+    font-size: medium;
     gap: 16px;
     justify-content: center;
     overflow: hidden;

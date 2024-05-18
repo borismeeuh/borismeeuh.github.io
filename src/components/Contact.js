@@ -1,6 +1,12 @@
 import plane from "../images/svg/plane-icon.svg";
+import { useForm, ValidationError } from "@formspree/react";
 
 function Contact() {
+    const [state, handleSubmit] = useForm("moqgbgqp");
+    // if (state.succeeded) {
+    //     return <p>Thank you!</p>;
+    // }
+
     return (
         <div className="contact" id="contact">
             <div className="contact-animation-wrapper">
@@ -12,13 +18,23 @@ function Contact() {
             </div>
             <div className="contact-form-wrapper">
                 <h1 className="title">Contact</h1>
-                <form className="contact-form">
-                <div className="contact-form-email-wrapper">
+                <form
+                    action="https://formspree.io/f/moqgbgqp"
+                    className="contact-form"
+                    method="POST"
+                    onSubmit={((e) => {
+                        e.preventDefault()
+                        handleSubmit(e)
+                    })}
+                >
+                    <div className="contact-form-email-wrapper">
                         <input
                             className="contact-form-input"
                             id="email"
-                            type="email"
+                            name="email"
                             placeholder="Email"
+                            required
+                            type="email"
                         />
                         <hr />
                     </div>
@@ -26,8 +42,10 @@ function Contact() {
                         <input
                             className="contact-form-input"
                             id="topic"
-                            type="text"
+                            name="topic"
                             placeholder="Subject"
+                            required
+                            type="text"
                         />
                         <hr />
                     </div>
@@ -35,14 +53,19 @@ function Contact() {
                         <textarea
                             className="contact-form-text-area"
                             id="message"
+                            name="message"
                             placeholder="Your question or message"
+                            required
                         ></textarea>
                         <hr />
                     </div>
-                    <div className="contact-form-submit">
+                    <button
+                        className="contact-form-submit"
+                        type="submit"
+                    >
                         <img src={plane} alt="Plane"></img>
                         <span>Send</span>
-                    </div>
+                    </button>
                 </form>
             </div>
         </div>
