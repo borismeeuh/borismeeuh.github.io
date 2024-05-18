@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Navigation from "./components/Navigation";
 import Skills from "./components/Skills";
+import Socials from "./components/Socials";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Intro></Intro>
                 <Education></Education>
                 <Skills></Skills>
+                {/* <Socials></Socials> */}
                 <Contact></Contact>
             </div>
         </div>

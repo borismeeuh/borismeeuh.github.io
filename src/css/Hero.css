@@ -10,13 +10,13 @@
             hsl(234deg 40% 35%) 89%,
             hsl(214deg 97% 36%) 100%);
     color: white;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
 }
 
 .hero-overlay {
     background-color: black;
-    height: 100dvh;
+    height: 100vh;
     opacity: .6;
     position: absolute;
     width: 100%;

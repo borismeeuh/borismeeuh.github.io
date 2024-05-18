@@ -1,5 +1,3 @@
-import email from "../images/svg/email-icon.svg";
-import linkedIn from "../images/svg/linkedin-icon.svg";
 import plane from "../images/svg/plane-icon.svg";
 
 function Contact() {
@@ -46,37 +44,6 @@ function Contact() {
                         <span>Send</span>
                     </div>
                 </form>
-            </div>
-            <div className="contact-info">
-                <div className="contact-info-spacer">
-                    <span className="paragraph">
-                        If you'd like to send me amessage or have a question you
-                        can reach out to me by filling out the form on the left.
-                        <br />
-                        <br />
-                        Website built by yours truly using only React and
-                        vanilla CSS.
-                    </span>
-                    <div className="contact-socials">
-                        <a
-                            href="https://nl.linkedin.com/in/boris-kamstra-201005209"
-                            target="_blank"
-                        >
-                            <img
-                                src={linkedIn}
-                                alt="LinkedIn"
-                                className="contact-social-media-button"
-                            ></img>
-                        </a>
-                        <a href="" target="_blank">
-                            <img
-                                src={email}
-                                alt="email"
-                                className="contact-social-media-button"
-                            ></img>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     );
