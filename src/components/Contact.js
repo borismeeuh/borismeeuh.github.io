@@ -3,9 +3,10 @@ import { useForm, ValidationError } from "@formspree/react";
 
 function Contact() {
     const [state, handleSubmit] = useForm("moqgbgqp");
-    // if (state.succeeded) {
-    //     return <p>Thank you!</p>;
-    // }
+    if (state.succeeded) {
+        console.log('heyhey')
+        document.getElementById('submit-text').innerText = "Thank you!"
+    }
 
     return (
         <div className="contact" id="contact">
@@ -64,7 +65,7 @@ function Contact() {
                         type="submit"
                     >
                         <img src={plane} alt="Plane"></img>
-                        <span>Send</span>
+                        <span id="submit-text">Send</span>
                     </button>
                 </form>
             </div>

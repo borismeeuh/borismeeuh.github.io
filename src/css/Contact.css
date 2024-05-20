@@ -269,7 +269,7 @@
 @media (min-width: 992px) {
     .contact-form-input,
     .contact-form-text-area {
-        width: 50%;
+        width: 30%;
     }
 }
 
@@ -321,7 +321,7 @@
     .contact-form-topic-wrapper input:focus+hr,
     .contact-form-email-wrapper input:focus+hr,
     .contact-form-message-wrapper textarea:focus+hr {
-        width: 25%;
+        width: 30%;
     }
 }
 
@@ -342,11 +342,13 @@
     width: fit-content;
 }
 
-.contact-form-submit:hover {
+.contact-form-submit:hover,
+.contact-form-submit:focus {
     cursor: pointer;
 }
 
-.contact-form-submit:hover img {
+.contact-form-submit:hover img,
+.contact-form-submit:focus img {
     animation: plane .7s linear;
 }
 
