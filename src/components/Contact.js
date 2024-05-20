@@ -1,11 +1,14 @@
 import plane from "../images/svg/plane-icon.svg";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 
 function Contact() {
     const [state, handleSubmit] = useForm("moqgbgqp");
     if (state.succeeded) {
-        console.log('heyhey')
         document.getElementById('submit-text').innerText = "Thank you!"
+
+        setTimeout(() => {
+            document.getElementById('submit-text').innerText = "Send"
+        }, 5000);
     }
 
     return (
