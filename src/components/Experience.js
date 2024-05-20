@@ -19,7 +19,7 @@ function Experience() {
                                 Intern Front-End Developer at
                             </span>
                             <span className="paragraph">
-                                <a href="#" className="link">
+                                <a href="https://www.xsarus.nl/" className="link" target="_blank">
                                     XSARUS
                                 </a>
                             </span>
@@ -38,7 +38,7 @@ function Experience() {
                                 Trainee Front-End Developer at
                             </span>
                             <span className="paragraph">
-                                <a href="#" className="link">
+                                <a href="https://www.webnl.nl/" className="link" target="_blank">
                                     WebNL
                                 </a>
                             </span>
@@ -58,7 +58,7 @@ function Experience() {
                             </span>
                             <span className="paragraph">
                                 {" "}
-                                <a href="#" className="link">
+                                <a href="https://www.webnl.nl/" className="link" target="_blank">
                                     WebNL
                                 </a>
                             </span>
