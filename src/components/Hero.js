@@ -24,7 +24,7 @@ function Hero() {
                     <div className="hero-title title">
                         Hi, I'm Boris Kamstra <br /> Welcome!
                     </div>
-                    <div className="subtitle">
+                    <div className="hero-sub subtitle">
                         Junior front-end developer
                     </div>
                 </div>
