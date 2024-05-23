@@ -1,5 +1,6 @@
 import { IconChevronDown } from "@tabler/icons-react";
 import ScrollIntoView from "react-scroll-into-view";
+import Logo from "../images/logos/thin-hexagon-white.svg"
 
 function Hero() {
     return (
@@ -16,6 +17,9 @@ function Hero() {
                 </div>
             </div>
             <div className="hero-content">
+                <div className="hero-logo">
+                    <img src={Logo} alt="Logo" />
+                </div>
                 <div className="hero-text">
                     <div className="hero-title title">
                         Hi, I'm Boris Kamstra <br /> Welcome!

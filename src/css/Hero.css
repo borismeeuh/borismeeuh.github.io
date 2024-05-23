@@ -31,6 +31,12 @@
     width: 100%;
 }
 
+.hero-logo {
+    aspect-ratio: 1;
+    height: 100px;
+    z-index: 1;
+}
+
 .hero-text {
     align-items: center;
     display: flex;
