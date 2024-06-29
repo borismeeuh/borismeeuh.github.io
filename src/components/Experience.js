@@ -3,7 +3,7 @@ import checkMark from "../images/svg/check-mark-icon.svg";
 function Experience() {
     return (
         <div className="experience">
-            <h2 className="subtitle">Development experience</h2>
+            <h2 className="subtitle">Professional Experience</h2>
             <div className="experience-list-wrapper">
                 <ul className="experience-list">
                     <li className="experience-list-item">

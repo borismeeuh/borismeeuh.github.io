@@ -1,3 +1,4 @@
+import About_website from "./components/About_website"
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Hero from "./components/Hero";
@@ -15,6 +16,7 @@ function App() {
                 <Intro></Intro>
                 <Education></Education>
                 <Skills></Skills>
+                <About_website></About_website>
                 {/* <Socials></Socials> */}
                 <Contact></Contact>
             </div>
