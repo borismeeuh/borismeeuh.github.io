@@ -3,7 +3,7 @@ import LighthouseReport from "../images/Lighthouse Report.png";
 
 function About_website() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about-wrapper">
                 <h1 className="title">About This Website</h1>
                 <div className="about-content">
