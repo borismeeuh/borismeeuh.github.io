@@ -1,8 +1,8 @@
 .about {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
     background-color: black;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
 }
 
 .about-wrapper {
@@ -10,18 +10,18 @@
 }
 
 .about-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 48px;
+    width: 100%;
 }
 
 .about-content-section {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 32px;
+    width: 100%;
 }
 
 .about-content-section:last-child {
@@ -30,13 +30,13 @@
 }
 
 .about-content-section:last-child::after {
-    content: ""; 
-    position: absolute;
-    height: 1px;
-    width: 100%;
     background-color: white;
-    top: -24px;
+    content: ""; 
+    height: 1px;
     left: 0;
+    position: absolute;
+    top: -24px;
+    width: 100%;
 }   
 
 @media (min-width: 992px) {
@@ -55,10 +55,10 @@
 }
 
 .about-content-text {
-    color: white;
-    width: 100%;
-    display: flex;
     align-items: center;
+    color: white;
+    display: flex;
+    width: 100%;
 }
 
 @media (min-width: 992px) {

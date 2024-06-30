@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4f48f99.css",
-    "main.js": "/static/js/main.cb690f00.js",
+    "main.css": "/static/css/main.a1274efa.css",
+    "main.js": "/static/js/main.719e6aa9.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/Education-background.jpg": "/static/media/Education-background.f764dc7749bf974f22c9.jpg",
     "static/media/Responsive Expample.png": "/static/media/Responsive Expample.ef3b68b31b16259321b7.png",
     "static/media/IntroProfileImg.jpeg": "/static/media/IntroProfileImg.7994cc4fe2f694bbf71f.jpeg",
+    "static/media/Lighthouse Report.png": "/static/media/Lighthouse Report.a11ad3a208c4d1b96891.png",
     "static/media/sass-icon.svg": "/static/media/sass-icon.58b7b983fb6ca88ef000f6a4a67b1bf1.svg",
     "static/media/travel-icon.svg": "/static/media/travel-icon.e66379e6d0f59ddff39cf4334c0776cf.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
@@ -25,12 +26,12 @@
     "index.html": "/index.html",
     "static/media/plane-icon.svg": "/static/media/plane-icon.d4e2fc20e45e25d1350ad4a2144c0092.svg",
     "static/media/vue-icon.svg": "/static/media/vue-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.e4f48f99.css.map": "/static/css/main.e4f48f99.css.map",
-    "main.cb690f00.js.map": "/static/js/main.cb690f00.js.map",
+    "main.a1274efa.css.map": "/static/css/main.a1274efa.css.map",
+    "main.719e6aa9.js.map": "/static/js/main.719e6aa9.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f48f99.css",
-    "static/js/main.cb690f00.js"
+    "static/css/main.a1274efa.css",
+    "static/js/main.719e6aa9.js"
   ]
 }

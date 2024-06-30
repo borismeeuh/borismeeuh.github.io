@@ -1,6 +1,6 @@
 import { IconChevronDown } from "@tabler/icons-react";
 import ScrollIntoView from "react-scroll-into-view";
-import Logo from "../images/logos/thin-hexagon-white.svg"
+import Logo from "../images/logos/thin-hexagon-white.svg";
 
 function Hero() {
     return (
@@ -33,6 +33,19 @@ function Hero() {
                         <IconChevronDown size={60} />
                     </ScrollIntoView>
                 </div>
+            </div>
+            <div className="stars">
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="star"></span>
+                <span className="shootingStar" id="shoot1"></span>
+                <span className="shootingStar" id="shoot2"></span>
+                <span className="shootingStar" id="shoot3"></span>
             </div>
         </div>
     );
