@@ -78,6 +78,9 @@
 }
 
 .about-content-image img {
-    height: 100%;
-    max-height: 250px;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 300px;
 }

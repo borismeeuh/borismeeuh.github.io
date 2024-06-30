@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1274efa.css",
+    "main.css": "/static/css/main.5fcb6ecd.css",
     "main.js": "/static/js/main.719e6aa9.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/Education-background.jpg": "/static/media/Education-background.f764dc7749bf974f22c9.jpg",
@@ -26,12 +26,12 @@
     "index.html": "/index.html",
     "static/media/plane-icon.svg": "/static/media/plane-icon.d4e2fc20e45e25d1350ad4a2144c0092.svg",
     "static/media/vue-icon.svg": "/static/media/vue-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.a1274efa.css.map": "/static/css/main.a1274efa.css.map",
+    "main.5fcb6ecd.css.map": "/static/css/main.5fcb6ecd.css.map",
     "main.719e6aa9.js.map": "/static/js/main.719e6aa9.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1274efa.css",
+    "static/css/main.5fcb6ecd.css",
     "static/js/main.719e6aa9.js"
   ]
 }
