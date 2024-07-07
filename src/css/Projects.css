@@ -53,10 +53,10 @@
     padding: 24px;
 }
 
-.projects-card-right {
-    width: 40%;
-    border-radius: 0 16px 16px 0;
-    background-color: blue;
+.projects-card-left div:last-child {
+    position: absolute;
+    /* background-color: red; */
+    bottom: 0;
 }
 
 .projects-card-left div:last-child {
@@ -76,7 +76,8 @@
 .projects-card-tech {
     width: fit-content;
     display: flex;
-    column-gap: 8px
+    column-gap: 8px;
+    align-items: flex-end;
 }
 
 .projects-tech-tag {
@@ -87,3 +88,15 @@
     width: fit-content;
 }
 
+.projects-card-right {
+    width: 40%;
+    border-radius: 0 16px 16px 0;
+}
+
+.projects-card-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0 16px 16px 0;
+    height: 300px;
+}

@@ -3,13 +3,38 @@ import chevronRight from "../images/svg/chevron-right.svg";
 import { useState, useEffect } from "react";
 
 function Projects() {
-    const items = ["one", "two", "three"];
+    const items = [
+        {
+            title: "Dutch Weather App",
+            paragraph:
+                "A weather app that allows the user to check the weather in the Netherlands. The app has a simple front-end built in Svelte.",
+            tech: ["Svelte", "Javascript"],
+            image: "Weather App.png",
+            link: "https://challanges-svelte.vercel.app/",
+        },
+        {
+            title: "Original Web Portfolio",
+            paragraph:
+                "My original web portfolio, built using HTML, CSS, Javascript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
+            tech: ["HTML", "CSS", "Javascript", "Laravel"],
+            image: "First Portfolio.png",
+        },
+        {
+            title: "GO For IT",
+            paragraph:
+                "A website built to promote the Go For IT event. It's built using Vue and SCSS.",
+            tech: ["Vue", "SCSS", "Javascript"],
+            image: "gfi.png",
+            link: "https://gfi.dev/home"
+        },
+    ];
 
-    let [itemNumber, setItemNumber] = useState(1);
+    let [itemNumber, setItemNumber] = useState(0);
     let currentItem = items[itemNumber];
+    let currentImage = require("../images/" + currentItem.image);
 
     useEffect(() => {
-        if ((itemNumber <= 0)) {
+        if (itemNumber <= 0) {
             document.getElementById("chevronLeft").style.visibility = "hidden";
         }
 
@@ -52,29 +77,35 @@ function Projects() {
                         <img src={chevronLeft} alt="" />
                     </div>
 
-                    {}
                     <div className="projects-card">
-                        <span>{currentItem}</span>
                         <div className="projects-card-left">
-                            <div className="title">Dutch Weather App</div>
+                            <div className="title">{currentItem.title}</div>
                             <div className="paragraph">
-                                A weather app that allows the user to check the
-                                weather in the Netherlands. The app has a simple
-                                front-end built in Svelte.
+                                {currentItem.paragraph}
                             </div>
                             <div className="projects-card-tech">
-                                <span className="projects-tech-tag">
-                                    svelte
-                                </span>
-                                <span className="projects-tech-tag">
-                                    svelte
-                                </span>
-                                <span className="projects-tech-tag">
-                                    svelte
-                                </span>
+                                {currentItem.tech.map((item) => (
+                                    <span className="projects-tech-tag">
+                                        {item}
+                                    </span>
+                                ))}
                             </div>
                         </div>
-                        <div className="projects-card-right"></div>
+                        <div className="projects-card-right">
+                            {currentItem.link ? (
+                                <a href={currentItem.link} target="_blank">
+                                    <img
+                                        className="projects-card-image"
+                                        src={currentImage}
+                                    />
+                                </a>
+                            ) : (
+                                <img
+                                    className="projects-card-image"
+                                    src={currentImage}
+                                />
+                            )}
+                        </div>
                     </div>
 
                     <div
