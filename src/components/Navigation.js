@@ -32,6 +32,9 @@ function Navigation() {
         const about = document
             .getElementById("about")
             .getBoundingClientRect().top;
+        const projects = document
+            .getElementById("projects")
+            .getBoundingClientRect().top;
         const contact = document
             .getElementById("contact")
             .getBoundingClientRect().top;
@@ -40,6 +43,8 @@ function Navigation() {
 
         if (contact < halfScreenPoint) {
             setSectionInView("contact");
+        } else if (projects < halfScreenPoint) {
+            setSectionInView("projects");
         } else if (about < halfScreenPoint) {
             setSectionInView("about");
         } else if (skills < halfScreenPoint) {
@@ -124,6 +129,20 @@ function Navigation() {
                     }`}
                     onMouseEnter={() => {
                         setNavigationTitle("nav-about", "About");
+                    }}
+                ></div>
+            </ScrollIntoView>
+
+            <ScrollIntoView selector="#projects">
+                <div
+                    id="nav-projects"
+                    className={`navigation-icon ${
+                        sectionInView === "projects"
+                            ? "navigation-icon-active"
+                            : ""
+                    }`}
+                    onMouseEnter={() => {
+                        setNavigationTitle("nav-projects", "Projects");
                     }}
                 ></div>
             </ScrollIntoView>

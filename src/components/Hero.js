@@ -25,7 +25,7 @@ function Hero() {
                         Hi, I'm Boris Kamstra <br /> Welcome!
                     </div>
                     <div className="hero-sub subtitle">
-                        Junior front-end developer
+                        Front-End Developer
                     </div>
                 </div>
                 <div className="hero-icon">

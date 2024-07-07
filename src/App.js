@@ -4,6 +4,7 @@ import Education from "./components/Education";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Navigation from "./components/Navigation";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Socials from "./components/Socials";
 
@@ -17,6 +18,7 @@ function App() {
                 <Education></Education>
                 <Skills></Skills>
                 <About_website></About_website>
+                <Projects></Projects>
                 {/* <Socials></Socials> */}
                 <Contact></Contact>
             </div>

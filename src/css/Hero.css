@@ -72,7 +72,6 @@
 
 .hero-icon {
     animation: verticalMovement 3s linear infinite;
-    bottom: 40px;
     position: absolute;
     transition: .3s;
 }

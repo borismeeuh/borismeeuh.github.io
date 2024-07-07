@@ -129,7 +129,7 @@
 }
 
 #shoot2::before{
-    background: linear-gradient(45deg,white,transparent);
+    background: linear-gradient(45deg, var(--quartiary),transparent);
     content:'';
     height: 1px;
     position: absolute;
@@ -142,7 +142,7 @@
 
 @keyframes shoot2 {
     0% {
-        background-color: white;
+        background-color: var(--quartiary);
         display: block;
         left: 80%;
         opacity: 0;
