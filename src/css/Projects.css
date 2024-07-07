@@ -1,27 +1,26 @@
 .projects {
     background-color: var(--primary);
     color: white;
-    width: 100%;
-    padding: 40px 0;
     display: flex;
     justify-content: center;
+    padding: 40px 0;
+    width: 100%;
 }
 
 .projects-wrapper {
-    width: 85%;
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+    width: 85%;
 }
 
 .projects-carousel {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: center;
-    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .projects-button {
@@ -30,33 +29,35 @@
 }
 
 .projects-button img {
-    /* background-color: green; */
-    width: 48px;
     aspect-ratio: 1/1;
+    width: 48px;
 }
 
 .projects-button:hover {
     cursor: pointer;
 }
 
-.projects-card {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    border-radius: 0 16px 16px 0;
-    position: relative;
+.projects-card:has(a) {
     border-left: 1px solid white;
 }
 
-.projects-card-left {
+.projects-card {
+    border-left: 1px solid var(--secondary);
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    height: 100%;
+    position: relative;
     width: 60%;
+}
+
+.projects-card-left {
     padding: 24px;
+    width: 60%;
 }
 
 .projects-card-left div:last-child {
-    position: absolute;
-    /* background-color: red; */
     bottom: 0;
+    position: absolute;
 }
 
 .projects-card-left div:last-child {
@@ -65,8 +66,8 @@
 
 .projects-card:has(.title) .title {
     font-size: 32px;
-    margin-bottom: 16px;
     font-weight: 350;
+    margin-bottom: 16px;
 }
 
 .projects-card:has(.title) .title::after {
@@ -74,29 +75,29 @@
 }
 
 .projects-card-tech {
-    width: fit-content;
-    display: flex;
-    column-gap: 8px;
     align-items: flex-end;
+    column-gap: 8px;
+    display: flex;
+    width: fit-content;
 }
 
 .projects-tech-tag {
-    padding: 4px 8px;
     border-radius: 12px;
-    font-size: 14px;
     border: 1px solid var(--secondary);
+    font-size: 14px;
+    padding: 4px 12px;
     width: fit-content;
 }
 
 .projects-card-right {
-    width: 40%;
     border-radius: 0 16px 16px 0;
+    width: 40%;
 }
 
 .projects-card-image {
+    border-radius: 0 16px 16px 0;
+    height: 300px;
     object-fit: cover;
     overflow: hidden;
     width: 100%;
-    border-radius: 0 16px 16px 0;
-    height: 300px;
 }

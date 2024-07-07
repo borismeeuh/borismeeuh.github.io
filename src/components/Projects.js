@@ -8,7 +8,7 @@ function Projects() {
             title: "Dutch Weather App",
             paragraph:
                 "A weather app that allows the user to check the weather in the Netherlands. The app has a simple front-end built in Svelte.",
-            tech: ["Svelte", "Javascript"],
+            tech: ["Svelte", "JavaScript"],
             image: "Weather App.png",
             link: "https://challanges-svelte.vercel.app/",
         },
@@ -16,14 +16,14 @@ function Projects() {
             title: "Original Web Portfolio",
             paragraph:
                 "My original web portfolio, built using HTML, CSS, Javascript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
-            tech: ["HTML", "CSS", "Javascript", "Laravel"],
+            tech: ["HTML", "CSS", "JavaScript", "Laravel"],
             image: "First Portfolio.png",
         },
         {
             title: "GO For IT",
             paragraph:
                 "A website built to promote the Go For IT event. It's built using Vue and SCSS.",
-            tech: ["Vue", "SCSS", "Javascript"],
+            tech: ["Vue", "SCSS", "JavaScript"],
             image: "gfi.png",
             link: "https://gfi.dev/home"
         },
