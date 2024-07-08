@@ -23,7 +23,7 @@ function Projects() {
         {
             title: "Original Web Portfolio",
             paragraph:
-                "My original web portfolio, built using HTML, CSS, Javascript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
+                "My original web portfolio, built using HTML, CSS, JavaScript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
             tech: ["HTML", "CSS", "JavaScript", "Laravel"],
             image: "First Portfolio.png",
         },

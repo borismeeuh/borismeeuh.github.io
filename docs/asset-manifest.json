@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.90d6c0dd.css",
-    "main.js": "/static/js/main.719e6aa9.js",
+    "main.css": "/static/css/main.48170ad7.css",
+    "main.js": "/static/js/main.6d0d1ceb.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/Weather App.png": "/static/media/Weather App.f34098a1a701abd86887.png",
+    "static/media/gfi.png": "/static/media/gfi.07029689772ec2b0f0e7.png",
+    "static/media/First Portfolio.png": "/static/media/First Portfolio.7a4cf72c7ba5b029f5c6.png",
     "static/media/Education-background.jpg": "/static/media/Education-background.f764dc7749bf974f22c9.jpg",
     "static/media/Responsive Expample.png": "/static/media/Responsive Expample.ef3b68b31b16259321b7.png",
     "static/media/IntroProfileImg.jpeg": "/static/media/IntroProfileImg.7994cc4fe2f694bbf71f.jpeg",
@@ -25,13 +28,15 @@
     "static/media/email-icon.svg": "/static/media/email-icon.341444060e64962b8d7931c942da0d9f.svg",
     "index.html": "/index.html",
     "static/media/plane-icon.svg": "/static/media/plane-icon.d4e2fc20e45e25d1350ad4a2144c0092.svg",
+    "static/media/chevron-left.svg": "/static/media/chevron-left.b19dbf11ffebcd4f0c280ba597c00b0e.svg",
+    "static/media/chevron-right.svg": "/static/media/chevron-right.96eafca8497bef11c8afe0bd844e0fc2.svg",
     "static/media/vue-icon.svg": "/static/media/vue-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.90d6c0dd.css.map": "/static/css/main.90d6c0dd.css.map",
-    "main.719e6aa9.js.map": "/static/js/main.719e6aa9.js.map",
+    "main.48170ad7.css.map": "/static/css/main.48170ad7.css.map",
+    "main.6d0d1ceb.js.map": "/static/js/main.6d0d1ceb.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90d6c0dd.css",
-    "static/js/main.719e6aa9.js"
+    "static/css/main.48170ad7.css",
+    "static/js/main.6d0d1ceb.js"
   ]
 }
