@@ -5,11 +5,13 @@ function Intro() {
                 <div className="intro-col-left">
                     <h1 className="title">Welcome to my portfolio page!</h1>
                     <p className="paragraph">
-                        I"m Boris Kamstra, a fourth year IT student at the Hogeschool Zeeland
-                        in the Netherlands. I've been passionate about frontend development since
-                        the start of my education. Currently, I'm doing my graduation internship
-                        at <a href="https://www.xsarus.nl/" target="_blank" className="link">XSARUS</a> where I'm exploring the possibilities
-                        of turning an OMS into a SaaS product. 
+                        Hey, I'm Boris Kamstra, a graduate from Hogeschool Zeeland were I studied IT.
+                        I've been passionate about frontend development since
+                        the start of my education. I have successfully completed my graduation project 
+                        at <a href="https://www.xsarus.nl/" target="_blank" className="link">XSARUS</a>, where I explored
+                        the possibilities of turning an existing OMS into a SaaS product. I'll start 
+                        my work as a front-end developer at <a href="https://www.webnl.nl/" target="_blank" className="link">WebNL</a> at 
+                        the beginning of August of 2024.
                     </p>
                 </div>
                 <div className="intro-col-right">

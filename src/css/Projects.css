@@ -130,3 +130,9 @@
     max-height: 350px;
     max-width: 100%;
 }
+
+.projects-image-unavailable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

@@ -13,6 +13,12 @@ function Projects() {
             link: "https://gfi.dev/home",
         },
         {
+            title: "Graduation Assignment",
+            paragraph:
+                "My graduation project involved rebuilding an existing app along SaaS principles. Key features were multi-tenancy and dynamism. ",
+            tech: ["Vue", "Nuxt", "TypeScript", "JavaScript", "SCSS",],
+        },
+        {
             title: "Dutch Weather App",
             paragraph:
                 "A weather app that allows the user to check the weather in the Netherlands. The app has a simple front-end built in Svelte.",
@@ -31,7 +37,9 @@ function Projects() {
 
     let [itemNumber, setItemNumber] = useState(0);
     let currentItem = items[itemNumber];
-    let currentImage = require("../images/" + currentItem.image);
+    let currentImage = currentItem.image
+        ? require("../images/" + currentItem.image)
+        : undefined;
 
     useEffect(() => {
         if (itemNumber <= 0) {
@@ -92,18 +100,24 @@ function Projects() {
                             </div>
                         </div>
                         <div className="projects-card-right">
-                            {currentItem.link ? (
-                                <a href={currentItem.link} target="_blank">
+                            {currentImage !== undefined ? (
+                                currentItem.link ? (
+                                    <a href={currentItem.link} target="_blank">
+                                        <img
+                                            className="projects-card-image"
+                                            src={currentImage}
+                                        />
+                                    </a>
+                                ) : (
                                     <img
                                         className="projects-card-image"
                                         src={currentImage}
                                     />
-                                </a>
+                                )
                             ) : (
-                                <img
-                                    className="projects-card-image"
-                                    src={currentImage}
-                                />
+                                <div className="projects-image-unavailable">
+                                    <div>No image available</div>
+                                </div>
                             )}
                         </div>
                     </div>
