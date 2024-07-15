@@ -5,6 +5,14 @@ import { useState, useEffect } from "react";
 function Projects() {
     const items = [
         {
+            title: "Solar System Model",
+            paragraph:
+                "A solar system model built using Babylon.js 3D engine. The sizes of the planets and inter-planetary distances are representative of real life. The app is a work in progress",
+            tech: ["Babylon.js", "Vue", "Javascript"],
+            image: "Solar System.png",
+            link: "https://borismeeuh.github.io/solar-system/",
+        },
+        {
             title: "GO For IT",
             paragraph:
                 "A website built to promote the Go For IT event. It's built using Vue and SCSS.",
@@ -16,10 +24,10 @@ function Projects() {
             title: "Graduation Assignment",
             paragraph:
                 "My graduation project involved rebuilding an existing app along SaaS principles. Key features were multi-tenancy and dynamism. ",
-            tech: ["Vue", "Nuxt", "TypeScript", "JavaScript", "SCSS",],
+            tech: ["Vue", "Nuxt", "TypeScript", "JavaScript", "SCSS"],
         },
         {
-            title: "Dutch Weather App",
+            title: "Weather App",
             paragraph:
                 "A weather app that allows the user to check the weather in the Netherlands. The app has a simple front-end built in Svelte.",
             tech: ["Svelte", "JavaScript"],
@@ -27,9 +35,9 @@ function Projects() {
             link: "https://challanges-svelte.vercel.app/",
         },
         {
-            title: "Original Web Portfolio",
+            title: "Old Web Portfolio",
             paragraph:
-                "My original web portfolio, built using HTML, CSS, JavaScript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
+                "My first web portfolio, built using HTML, CSS, JavaScript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
             tech: ["HTML", "CSS", "JavaScript", "Laravel"],
             image: "First Portfolio.png",
         },
