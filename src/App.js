@@ -1,4 +1,4 @@
-import About_website from "./components/About_website"
+import About_website from "./components/About_website";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Hero from "./components/Hero";

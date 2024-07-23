@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2953e377.css",
+    "main.css": "/static/css/main.41df2b47.css",
     "main.js": "/static/js/main.71e399cf.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/Weather App.png": "/static/media/Weather App.f34098a1a701abd86887.png",
@@ -32,12 +32,12 @@
     "static/media/chevron-left.svg": "/static/media/chevron-left.b19dbf11ffebcd4f0c280ba597c00b0e.svg",
     "static/media/chevron-right.svg": "/static/media/chevron-right.96eafca8497bef11c8afe0bd844e0fc2.svg",
     "static/media/vue-icon.svg": "/static/media/vue-icon.9f537ef871539b63299dea9ec24182f4.svg",
-    "main.2953e377.css.map": "/static/css/main.2953e377.css.map",
+    "main.41df2b47.css.map": "/static/css/main.41df2b47.css.map",
     "main.71e399cf.js.map": "/static/js/main.71e399cf.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2953e377.css",
+    "static/css/main.41df2b47.css",
     "static/js/main.71e399cf.js"
   ]
 }
