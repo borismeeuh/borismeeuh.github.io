@@ -4,10 +4,13 @@ import { useForm } from "@formspree/react";
 function Contact() {
     const [state, handleSubmit] = useForm("moqgbgqp");
     if (state.succeeded) {
-        document.getElementById('submit-text').innerText = "Thank you!"
+        document.getElementById("submit-text").innerText = "Thank you!";
+        document.getElementById("email").value = "";
+        document.getElementById("topic").value = "";
+        document.getElementById("message").value = "";
 
         setTimeout(() => {
-            document.getElementById('submit-text').innerText = "Send"
+            document.getElementById("submit-text").innerText = "Send";
         }, 5000);
     }
 
@@ -26,10 +29,10 @@ function Contact() {
                     action="https://formspree.io/f/moqgbgqp"
                     className="contact-form"
                     method="POST"
-                    onSubmit={((e) => {
-                        e.preventDefault()
-                        handleSubmit(e)
-                    })}
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        handleSubmit(e);
+                    }}
                 >
                     <div className="contact-form-email-wrapper">
                         <input
@@ -63,10 +66,7 @@ function Contact() {
                         ></textarea>
                         <hr />
                     </div>
-                    <button
-                        className="contact-form-submit"
-                        type="submit"
-                    >
+                    <button className="contact-form-submit" type="submit">
                         <img src={plane} alt="Plane"></img>
                         <span id="submit-text">Send</span>
                     </button>
