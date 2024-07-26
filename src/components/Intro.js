@@ -18,8 +18,8 @@ function Intro() {
                         </a>
                         , where I explored the possibilities of turning an
                         existing Order Management System into a Software as a
-                        Service product. I'll start my work as a front-end
-                        developer at{" "}
+                        Service product. I have started my work as a junior
+                        front-end developer at{" "}
                         <a
                             href="https://www.webnl.nl/"
                             target="_blank"
