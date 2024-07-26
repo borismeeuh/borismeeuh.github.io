@@ -40,7 +40,7 @@ function Education() {
                                     <img src={education} alt="Globe" />
                                 </div>
                                 <div className="education-block-text paragraph">
-                                    Studying ICT at Hogeschool Zeeland
+                                    ICT graduate from Hogeschool Zeeland
                                     University of Applied Sciences, Netherlands
                                 </div>
                             </div>

@@ -16,10 +16,37 @@ function Experience() {
                         </div>
                         <div className="experience-text">
                             <span className="paragraph">
+                                Junior Front-End Developer at
+                            </span>
+                            <span className="paragraph">
+                                <a
+                                    href="https://www.webnl.nl/"
+                                    className="link"
+                                    target="_blank"
+                                >
+                                    WebNL
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                    <li className="experience-list-item">
+                        <div>
+                            <img
+                                className="experience-checkmark"
+                                src={checkMark}
+                                alt="Check"
+                            />
+                        </div>
+                        <div className="experience-text">
+                            <span className="paragraph">
                                 Intern Front-End Developer at
                             </span>
                             <span className="paragraph">
-                                <a href="https://www.xsarus.nl/" className="link" target="_blank">
+                                <a
+                                    href="https://www.xsarus.nl/"
+                                    className="link"
+                                    target="_blank"
+                                >
                                     XSARUS
                                 </a>
                             </span>
@@ -38,7 +65,11 @@ function Experience() {
                                 Trainee Front-End Developer at
                             </span>
                             <span className="paragraph">
-                                <a href="https://www.webnl.nl/" className="link" target="_blank">
+                                <a
+                                    href="https://www.webnl.nl/"
+                                    className="link"
+                                    target="_blank"
+                                >
                                     WebNL
                                 </a>
                             </span>
@@ -58,7 +89,11 @@ function Experience() {
                             </span>
                             <span className="paragraph">
                                 {" "}
-                                <a href="https://www.webnl.nl/" className="link" target="_blank">
+                                <a
+                                    href="https://www.webnl.nl/"
+                                    className="link"
+                                    target="_blank"
+                                >
                                     WebNL
                                 </a>
                             </span>
