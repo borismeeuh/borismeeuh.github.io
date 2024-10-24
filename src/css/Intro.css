@@ -19,6 +19,7 @@
 @media (min-width: 768px) {
     .intro-content {
         flex-direction: row;
+        max-width: 1600px;
         width: 85%;
     }
 }

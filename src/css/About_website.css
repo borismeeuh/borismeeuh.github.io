@@ -8,6 +8,7 @@
 .about-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 1600px;
     padding: 40px 0;
     row-gap: 16px;
     width: 85%;

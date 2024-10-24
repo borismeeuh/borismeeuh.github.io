@@ -1,6 +1,8 @@
 .contact {
     background-color: black;
+    display: flex;
     height: calc(100vh - 40px);
+    justify-content: center;
     padding: 40px 0;
     width: 100%;
 }
