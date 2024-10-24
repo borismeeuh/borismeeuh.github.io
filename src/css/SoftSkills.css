@@ -11,12 +11,13 @@
     flex-direction: column;
     gap: 16px;
     padding: 0;
-    width: 75%;
+    width: 100%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .softSkills-list {
         margin-left: 32px;
+        width: 75%;
     }
 }
 
