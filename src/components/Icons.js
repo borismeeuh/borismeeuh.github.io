@@ -19,7 +19,7 @@ function Icons() {
                         setCircleColour("#E44D26");
                     }}
                 >
-                    <img src={html} alt="HTML 5" />
+                    <img src={html} alt="HTML 5" loading="lazy" />
                 </div>
 
                 <div
@@ -28,7 +28,7 @@ function Icons() {
                         setCircleColour("#2062AF");
                     }}
                 >
-                    <img src={css} alt="CSS" />
+                    <img src={css} alt="CSS" loading="lazy" />
                 </div>
 
                 <div
@@ -37,7 +37,7 @@ function Icons() {
                         setCircleColour("#F7DF1E");
                     }}
                 >
-                    <img src={javaScript} alt="JavaScript" />
+                    <img src={javaScript} alt="JavaScript" loading="lazy" />
                 </div>
 
                 <div
@@ -46,7 +46,7 @@ function Icons() {
                         setCircleColour("#4DBA87");
                     }}
                 >
-                    <img src={vue} alt="Vue" />
+                    <img src={vue} alt="Vue" loading="lazy" />
                 </div>
 
                 <div
@@ -55,7 +55,7 @@ function Icons() {
                         setCircleColour("#FF3E00");
                     }}
                 >
-                    <img src={svelte} alt="Svelte" />
+                    <img src={svelte} alt="Svelte" loading="lazy" />
                 </div>
 
                 <div
@@ -64,7 +64,7 @@ function Icons() {
                         setCircleColour("#00D8FF");
                     }}
                 >
-                    <img src={react} alt="React" />
+                    <img src={react} alt="React" loading="lazy" />
                 </div>
 
                 <div
@@ -73,7 +73,7 @@ function Icons() {
                         setCircleColour("#F05133");
                     }}
                 >
-                    <img src={git} alt="Git" />
+                    <img src={git} alt="Git" loading="lazy" />
                 </div>
 
                 <div
@@ -82,7 +82,7 @@ function Icons() {
                         setCircleColour("#007ACC");
                     }}
                 >
-                    <img src={typescript} alt="Typescript" />
+                    <img src={typescript} alt="Typescript" loading="lazy" />
                 </div>
 
                 <div
@@ -91,7 +91,7 @@ function Icons() {
                         setCircleColour("#CF649A");
                     }}
                 >
-                    <img src={sass} alt="Sass" />
+                    <img src={sass} alt="Sass" loading="lazy" />
                 </div>
             </div>
         </div>

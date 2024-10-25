@@ -18,19 +18,27 @@ function About_website() {
                             </span>
                         </div>
                         <div className="about-content-image">
-                            <img src={Responsivity} alt="Responsivity"></img>
+                            <img
+                                src={Responsivity}
+                                alt="Responsivity"
+                                loading="lazy"
+                            ></img>
                         </div>
                     </div>
                     <div className="about-content-section">
                         <div className="about-content-image">
-                            <img src={LighthouseReport} alt="Responsivity"></img>
+                            <img
+                                src={LighthouseReport}
+                                alt="Responsivity"
+                                loading="lazy"
+                            ></img>
                         </div>
                         <div className="about-content-text">
                             <span className="paragraph">
-                                The code for this website is optimised, which 
-                                resulted in a perfect score in Google's Lighthouse
-                                Report, demonstrating my dedication to creating
-                                high quality web apps.
+                                The code for this website is optimised, which
+                                resulted in a perfect score in Google's
+                                Lighthouse Report, demonstrating my dedication
+                                to creating high quality web apps.
                             </span>
                         </div>
                     </div>

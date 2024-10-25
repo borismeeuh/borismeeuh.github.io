@@ -136,7 +136,7 @@ function Projects() {
                         id="chevronLeft"
                         onClick={shiftLeft}
                     >
-                        <img src={chevronLeft} alt="" />
+                        <img src={chevronLeft} alt="" loading="lazy" />
                     </div>
 
                     <div className="projects-card">
@@ -163,12 +163,14 @@ function Projects() {
                                         <img
                                             className="projects-card-image"
                                             src={currentImage}
+                                            loading="lazy"
                                         />
                                     </a>
                                 ) : (
                                     <img
                                         className="projects-card-image"
                                         src={currentImage}
+                                        loading="lazy"
                                     />
                                 )
                             ) : (
@@ -184,7 +186,7 @@ function Projects() {
                         id="chevronRight"
                         onClick={shiftRight}
                     >
-                        <img src={chevronRight} alt="" />
+                        <img src={chevronRight} alt="" loading="lazy" />
                     </div>
                 </div>
                 <div className="projects-carousel-nav">

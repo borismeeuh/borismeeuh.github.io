@@ -12,6 +12,7 @@ function Experience() {
                                 className="experience-checkmark"
                                 src={checkMark}
                                 alt="Check"
+                                loading="lazy"
                             />
                         </div>
                         <div className="experience-text">
@@ -35,6 +36,7 @@ function Experience() {
                                 className="experience-checkmark"
                                 src={checkMark}
                                 alt="Check"
+                                loading="lazy"
                             />
                         </div>
                         <div className="experience-text">
@@ -58,6 +60,7 @@ function Experience() {
                                 className="experience-checkmark"
                                 src={checkMark}
                                 alt="Check"
+                                loading="lazy"
                             />
                         </div>
                         <div className="experience-text">
@@ -81,6 +84,7 @@ function Experience() {
                                 className="experience-checkmark"
                                 src={checkMark}
                                 alt="Check"
+                                loading="lazy"
                             />
                         </div>
                         <div className="experience-text">

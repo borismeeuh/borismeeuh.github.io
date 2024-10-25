@@ -67,7 +67,7 @@ function Contact() {
                         <hr />
                     </div>
                     <button className="contact-form-submit" type="submit">
-                        <img src={plane} alt="Plane"></img>
+                        <img src={plane} alt="Plane" loading="lazy"></img>
                         <span id="submit-text">Send</span>
                     </button>
                 </form>

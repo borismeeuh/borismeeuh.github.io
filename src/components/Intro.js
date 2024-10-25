@@ -1,3 +1,5 @@
+import pfp from "../images/IntroProfileImg.jpeg"
+
 function Intro() {
     return (
         <div className="intro" id="intro">
@@ -31,7 +33,12 @@ function Intro() {
                     </p>
                 </div>
                 <div className="intro-col-right">
-                    <div className="intro-img"></div>
+                    <img 
+                        className="intro-img"  
+                        src={pfp} 
+                        alt="Profile picture" 
+                        loading="lazy"
+                    />
                 </div>
             </div>
         </div>

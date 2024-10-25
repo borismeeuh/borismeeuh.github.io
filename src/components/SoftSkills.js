@@ -11,6 +11,7 @@ function SoftSkills() {
                             className="experience-checkmark"
                             src={checkMark}
                             alt="Check"
+                            loading="lazy"
                         />
                     </div>
                     <div className="experience-text">
@@ -26,6 +27,7 @@ function SoftSkills() {
                             className="experience-checkmark"
                             src={checkMark}
                             alt="Check"
+                            loading="lazy"
                         />
                     </div>
                     <div className="experience-text">
@@ -40,6 +42,7 @@ function SoftSkills() {
                             className="experience-checkmark"
                             src={checkMark}
                             alt="Check"
+                            loading="lazy"
                         />
                     </div>
                     <div className="experience-text">

@@ -1,5 +1,5 @@
 .education {
-    background-image: url(../images/Education-background.jpg);
+    /* background-image: url(../images/Education-background.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,6 +9,14 @@
     padding-bottom: 32px;
     position: relative;
     width: 100%;
+}
+
+.education-background img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
 }
 
 .education:after {

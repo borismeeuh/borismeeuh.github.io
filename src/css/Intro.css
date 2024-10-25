@@ -2,7 +2,6 @@
     background-color: var(--primary);
     color: white;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     width: 100%;
     z-index: 1;
@@ -54,12 +53,12 @@
 
 .intro-img {
     aspect-ratio: 1/1;
-    background-image: url(../images/IntroProfileImg.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
     height: 200px;
     max-height: 300px;
+    object-fit: cover;
     width: fit-content;
 }
 

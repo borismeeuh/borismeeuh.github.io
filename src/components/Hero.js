@@ -18,7 +18,7 @@ function Hero() {
             </div>
             <div className="hero-content">
                 <div className="hero-logo">
-                    <img src={Logo} alt="Logo" />
+                    <img src={Logo} alt="Logo" loading="lazy" />
                 </div>
                 <div className="hero-text">
                     <div className="hero-title title">
