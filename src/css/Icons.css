@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 16px 0;
+}
+
+@media screen and (min-width: 992px) {
+    .icons {
+        padding: 0;
+    }
 }
 
 .icons-container {
@@ -13,7 +20,7 @@
 
 @media (min-width: 992px) {
     .icons-container {
-        gap: 20px;
+        gap: 24px;
     }
 }
 

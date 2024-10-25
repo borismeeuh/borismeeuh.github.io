@@ -67,8 +67,6 @@ function Projects() {
         : undefined;
 
     useEffect(() => {
-        console.log(itemNumber);
-        
         if (itemNumber <= 0) {
             document.getElementById("chevronLeft").style.visibility = "hidden";
         } else {
@@ -78,7 +76,8 @@ function Projects() {
         if (itemNumber >= items.length - 1) {
             document.getElementById("chevronRight").style.visibility = "hidden";
         } else {
-            document.getElementById("chevronRight").style.visibility = "visible";
+            document.getElementById("chevronRight").style.visibility =
+                "visible";
         }
     });
 
@@ -90,18 +89,20 @@ function Projects() {
         for (const navItem of navItems) {
             for (const className of navItem.classList) {
                 if (className === "projects-carousel-nav-item--active") {
-                    navItem.classList.remove("projects-carousel-nav-item--active")
-                }              
-            }         
+                    navItem.classList.remove(
+                        "projects-carousel-nav-item--active"
+                    );
+                }
+            }
         }
     }
 
     function setNavItem(item) {
-        removeCurrentItemClass();        
-        
+        removeCurrentItemClass();
+
         let el = document.getElementById("projects-carousel-nav-item--" + item);
         el.classList.add("projects-carousel-nav-item--active");
-        setItemNumber(item)
+        setItemNumber(item);
     }
 
     function shiftLeft() {

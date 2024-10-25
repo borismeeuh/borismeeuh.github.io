@@ -78,12 +78,13 @@
 .projects-card-left {
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 24px 0;
     width: 100%;
 }
 
 @media (min-width: 992px) {
     .projects-card-left {
+        padding: 24px;
         width: 50%;
     }
 
