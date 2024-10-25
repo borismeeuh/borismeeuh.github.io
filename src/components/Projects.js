@@ -44,20 +44,65 @@ function Projects() {
     ];
 
     let [itemNumber, setItemNumber] = useState(0);
+
+    let itemsNavigation = items.map((item, key) => {
+        return (
+            <div
+                className={`projects-carousel-nav-item ${
+                    key == itemNumber
+                        ? "projects-carousel-nav-item--active"
+                        : ""
+                }`}
+                id={`${"projects-carousel-nav-item--" + key}`}
+                onClick={() => {
+                    setNavItem(key);
+                }}
+            ></div>
+        );
+    });
+
     let currentItem = items[itemNumber];
     let currentImage = currentItem.image
         ? require("../images/" + currentItem.image)
         : undefined;
 
     useEffect(() => {
+        console.log(itemNumber);
+        
         if (itemNumber <= 0) {
             document.getElementById("chevronLeft").style.visibility = "hidden";
+        } else {
+            document.getElementById("chevronLeft").style.visibility = "visible";
         }
 
         if (itemNumber >= items.length - 1) {
             document.getElementById("chevronRight").style.visibility = "hidden";
+        } else {
+            document.getElementById("chevronRight").style.visibility = "visible";
         }
     });
+
+    function removeCurrentItemClass() {
+        let navItems = document.getElementsByClassName(
+            "projects-carousel-nav-item"
+        );
+
+        for (const navItem of navItems) {
+            for (const className of navItem.classList) {
+                if (className === "projects-carousel-nav-item--active") {
+                    navItem.classList.remove("projects-carousel-nav-item--active")
+                }              
+            }         
+        }
+    }
+
+    function setNavItem(item) {
+        removeCurrentItemClass();        
+        
+        let el = document.getElementById("projects-carousel-nav-item--" + item);
+        el.classList.add("projects-carousel-nav-item--active");
+        setItemNumber(item)
+    }
 
     function shiftLeft() {
         document.getElementById("chevronRight").style.visibility = "visible";
@@ -100,8 +145,11 @@ function Projects() {
                                 {currentItem.paragraph}
                             </div>
                             <div className="projects-card-tech">
-                                {currentItem.tech.map((item) => (
-                                    <span className="projects-tech-tag">
+                                {currentItem.tech.map((item, key) => (
+                                    <span
+                                        className="projects-tech-tag"
+                                        key={key}
+                                    >
                                         {item}
                                     </span>
                                 ))}
@@ -136,6 +184,11 @@ function Projects() {
                         onClick={shiftRight}
                     >
                         <img src={chevronRight} alt="" />
+                    </div>
+                </div>
+                <div className="projects-carousel-nav">
+                    <div className="projects-carousel-nav-buttons">
+                        {itemsNavigation}
                     </div>
                 </div>
             </div>
