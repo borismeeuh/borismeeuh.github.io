@@ -35,10 +35,12 @@ function About_website() {
                         </div>
                         <div className="about-content-text">
                             <span className="paragraph">
-                                The code for this website is optimised, which
-                                resulted in a perfect score in Google's
-                                Lighthouse Report, demonstrating my dedication
-                                to creating high quality web apps.
+                                The JavaScript code for this website has been
+                                minimised, significantly reducing the final
+                                JavaScript bundle in size. This resulted in a
+                                perfect score in Google's Lighthouse Report,
+                                demonstrating my dedication to creating high
+                                quality web apps.
                             </span>
                         </div>
                     </div>
