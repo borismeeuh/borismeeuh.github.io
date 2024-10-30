@@ -1,6 +1,7 @@
 import { IconChevronDown } from "@tabler/icons-react";
-import ScrollIntoView from "react-scroll-into-view";
 import Logo from "../images/logos/thin-hexagon-white.svg";
+import ScrollIntoView from "react-scroll-into-view";
+import Wave from "../images/svg/wave-single.svg";
 
 function Hero() {
     return (
@@ -15,6 +16,9 @@ function Hero() {
                 <div className="planet3">
                     <div className="planet3-ring"></div>
                 </div>
+            </div>
+            <div className="hero-wave">
+                <img src={Wave} alt="Wave" loading="lazy" />
             </div>
             <div className="hero-content">
                 <div className="hero-logo">

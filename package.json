@@ -20,7 +20,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "webpack --config webpack.config.js",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -43,8 +43,16 @@
         ]
     },
     "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "@babel/preset-react": "^7.25.9",
+        "babel-loader": "^9.2.1",
         "node-sass": "^7.0.3",
         "sass": "^1.76.0",
-        "sass-loader": "^14.2.1"
+        "sass-loader": "^14.2.1",
+        "terser-webpack-plugin": "^5.3.10",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
     }
 }
