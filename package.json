@@ -47,6 +47,8 @@
         "@babel/preset-env": "^7.26.0",
         "@babel/preset-react": "^7.25.9",
         "babel-loader": "^9.2.1",
+        "css-minimizer-webpack-plugin": "^7.0.0",
+        "mini-css-extract-plugin": "^2.9.2",
         "node-sass": "^7.0.3",
         "sass": "^1.76.0",
         "sass-loader": "^14.2.1",

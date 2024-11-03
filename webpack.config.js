@@ -1,5 +1,7 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "production",
@@ -25,7 +27,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
         ],
     },
@@ -42,6 +44,12 @@ module.exports = {
                     },
                 },
             }),
+            new CssMinimizerPlugin(),
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "../css/styles.min.css"
+        })
+    ]
 };
