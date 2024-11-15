@@ -2,6 +2,7 @@ const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -45,6 +46,18 @@ module.exports = {
                 },
             }),
             new CssMinimizerPlugin(),
+            new ImageMinimizerPlugin({
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    options: {
+                        plugins: [
+                            ["imagemin-mozjpeg", { quality: 75 }],
+                            ["imagemin-pngquant", { quality: [.65, .8]}],
+                            ["imagemin-svgo", { plugins: [{ removeViewBox: false }] }],
+                        ]
+                    }
+                },
+            }),
         ],
     },
     plugins: [
