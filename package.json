@@ -51,6 +51,8 @@
         "image-minimizer-webpack-plugin": "^4.1.0",
         "imagemin": "^9.0.0",
         "imagemin-mozjpeg": "^10.0.0",
+        "imagemin-pngquant": "^10.0.0",
+        "imagemin-svgo": "^11.0.1",
         "mini-css-extract-plugin": "^2.9.2",
         "node-sass": "^7.0.3",
         "sass": "^1.76.0",

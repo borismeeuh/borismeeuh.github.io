@@ -53,7 +53,17 @@ module.exports = {
                         plugins: [
                             ["imagemin-mozjpeg", { quality: 75 }],
                             ["imagemin-pngquant", { quality: [.65, .8]}],
-                            ["imagemin-svgo", { plugins: [{ removeViewBox: false }] }],
+                            [
+                                "svgo",
+                                {
+                                    plugins: [
+                                        {
+                                            name: 'removeViewBox',
+                                            active: true,
+                                        },
+                                    ]
+                                }
+                            ]
                         ]
                     }
                 },
