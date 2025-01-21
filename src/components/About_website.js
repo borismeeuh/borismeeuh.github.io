@@ -35,7 +35,7 @@ function About_website() {
                         </div>
                         <div className="about-content-text">
                             <span className="paragraph">
-                                The JavaScript and CSS for this website has been
+                                The JavaScript and CSS for this website have been
                                 minimised, significantly reducing the final
                                 JavaScript bundle in size. The images have been
                                 compressed and are lazy-loaded. This resulted in a

@@ -25,7 +25,7 @@ function Icons() {
                 <div
                     className="icon"
                     onMouseEnter={() => {
-                        setCircleColour("#2062AF");
+                        setCircleColour("#66309A");
                     }}
                 >
                     <img src={css} alt="CSS" loading="lazy" />
