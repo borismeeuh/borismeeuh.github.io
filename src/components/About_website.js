@@ -1,5 +1,6 @@
-import Responsivity from "../images/Responsive Expample.png";
+import accessibility from "../images/a11y.png";
 import LighthouseReport from "../images/Lighthouse Report.png";
+import Responsivity from "../images/Responsive Expample.png";
 
 function About_website() {
     return (
@@ -25,6 +26,7 @@ function About_website() {
                             ></img>
                         </div>
                     </div>
+
                     <div className="about-content-section">
                         <div className="about-content-image">
                             <img
@@ -35,14 +37,34 @@ function About_website() {
                         </div>
                         <div className="about-content-text">
                             <span className="paragraph">
-                                The JavaScript and CSS for this website have been
-                                minimised, significantly reducing the final
+                                The JavaScript and CSS for this website have
+                                been minimised, significantly reducing the final
                                 JavaScript bundle in size. The images have been
-                                compressed and are lazy-loaded. This resulted in a
-                                perfect score in Google's Lighthouse Report,
+                                compressed and are lazy-loaded. This resulted in
+                                a perfect score in Google's Lighthouse Report,
                                 demonstrating my dedication to creating high
                                 quality web apps.
                             </span>
+                        </div>
+                    </div>
+
+                    <div className="about-content-section">
+                        <div className="about-content-text">
+                            <span className="paragraph">
+                                Special attention has been given to implementing
+                                accessibility (a11y) features throughout the
+                                site. Key features such as font size, colour
+                                contrast, keyboard navigation, and descriptive
+                                alt text for images help ensure that the website
+                                remains intuitive and usable for all users.
+                            </span>
+                        </div>
+                        <div className="about-content-image">
+                            <img
+                                src={accessibility}
+                                alt="Accessibility illustration"
+                                loading="lazy"
+                            ></img>
                         </div>
                     </div>
                 </div>
