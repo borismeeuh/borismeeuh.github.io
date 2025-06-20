@@ -58,6 +58,12 @@ function Projects() {
                 onClick={() => {
                     setNavItem(key);
                 }}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                        setNavItem(key);
+                    }
+                }}
             ></div>
         );
     });
@@ -138,16 +144,15 @@ function Projects() {
                         onClick={shiftLeft}
                         tabIndex={0}
                         onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
+                            if (e.key === "Enter") {
                                 shiftLeft();
                             }
-                          }}
+                        }}
                     >
                         <img
                             src={chevronLeft}
                             alt="Move slider left"
                             loading="lazy"
-
                         />
                     </div>
 
@@ -205,11 +210,11 @@ function Projects() {
                         onClick={shiftRight}
                         tabIndex={0}
                         onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
+                            if (e.key === "Enter") {
                                 shiftRight();
                             }
-                          }}
-                        >
+                        }}
+                    >
                         <img
                             src={chevronRight}
                             alt="Move slider right"

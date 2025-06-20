@@ -168,7 +168,8 @@
     z-index: 1;
 }
 
-.projects-carousel-nav-item:hover {
+.projects-carousel-nav-item:hover,
+.projects-carousel-nav-item:focus-visible {
     cursor: pointer;
     opacity: 1;
     transform: scale(1.25);
