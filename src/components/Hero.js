@@ -41,7 +41,7 @@ function Hero() {
                 </div>
                 <div
                     className="hero-icon"
-                    tabIndex=""
+                    tabIndex="0"
                     onKeyDown={navigateToSection}
                 >
                     <ScrollIntoView selector="#intro">
