@@ -1,4 +1,4 @@
-import { ReactComponent as ChevronDown } from "../images/svg/chevron-down.svg";
+import ChevronDown from "../images/svg/chevron-down.svg";
 import Logo from "../images/logos/thin-hexagon-white.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import Wave from "../images/svg/wave-single.svg";
@@ -45,7 +45,12 @@ function Hero() {
                     onKeyDown={navigateToSection}
                 >
                     <ScrollIntoView selector="#intro">
-                        <ChevronDown className="hero-icon-svg" loading="lazy" />
+                        <img
+                            src={ChevronDown}
+                            alt="Scroll down"
+                            className="hero-icon-svg"
+                            loading="lazy"
+                        />
                     </ScrollIntoView>
                 </div>
             </div>
