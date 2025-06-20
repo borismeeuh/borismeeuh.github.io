@@ -86,6 +86,12 @@
     z-index: 2;
 }
 
+.hero-icon-svg {
+    fill: white;
+    height: 48px;
+    width: 48px;
+}
+
 .hero-icon:hover {
     cursor: pointer;
     opacity: .5;

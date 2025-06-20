@@ -1,9 +1,18 @@
-import { IconChevronDown } from "@tabler/icons-react";
+import { ReactComponent as ChevronDown } from "../images/svg/chevron-down.svg";
 import Logo from "../images/logos/thin-hexagon-white.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import Wave from "../images/svg/wave-single.svg";
 
 function Hero() {
+    const navigateToSection = (event) => {
+        if (event.key === "Enter") {
+            document.getElementById("intro").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
     return (
         <div className="hero" id="hero">
             <div className="hero-overlay">
@@ -26,15 +35,17 @@ function Hero() {
                 </div>
                 <div className="hero-text">
                     <div className="hero-title title">
-                        Hi, I'm Boris Kamstra <br /> Welcome!
+                        Hi, I'm Boris <br /> Welcome!
                     </div>
-                    <div className="hero-sub subtitle">
-                        Front-End Developer
-                    </div>
+                    <div className="hero-sub subtitle">Front-End Developer</div>
                 </div>
-                <div className="hero-icon">
+                <div
+                    className="hero-icon"
+                    tabIndex="1"
+                    onKeyDown={navigateToSection}
+                >
                     <ScrollIntoView selector="#intro">
-                        <IconChevronDown size={60} />
+                        <ChevronDown className="hero-icon-svg" loading="lazy" />
                     </ScrollIntoView>
                 </div>
             </div>

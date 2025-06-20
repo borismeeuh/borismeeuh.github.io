@@ -48,8 +48,9 @@ function Projects() {
     let itemsNavigation = items.map((item, key) => {
         return (
             <div
+                key={key}
                 className={`projects-carousel-nav-item ${
-                    key == itemNumber
+                    key === itemNumber
                         ? "projects-carousel-nav-item--active"
                         : ""
                 }`}
@@ -135,8 +136,19 @@ function Projects() {
                         className="projects-button"
                         id="chevronLeft"
                         onClick={shiftLeft}
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                shiftLeft();
+                            }
+                          }}
                     >
-                        <img src={chevronLeft} alt="" loading="lazy" />
+                        <img
+                            src={chevronLeft}
+                            alt="Move slider left"
+                            loading="lazy"
+
+                        />
                     </div>
 
                     <div className="projects-card">
@@ -159,11 +171,16 @@ function Projects() {
                         <div className="projects-card-right">
                             {currentImage !== undefined ? (
                                 currentItem.link ? (
-                                    <a href={currentItem.link} target="_blank">
+                                    <a
+                                        href={currentItem.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <img
                                             className="projects-card-image"
                                             src={currentImage}
                                             loading="lazy"
+                                            alt="Project schermafbeelding"
                                         />
                                     </a>
                                 ) : (
@@ -171,6 +188,7 @@ function Projects() {
                                         className="projects-card-image"
                                         src={currentImage}
                                         loading="lazy"
+                                        alt="Project schermafbeelding"
                                     />
                                 )
                             ) : (
@@ -185,8 +203,18 @@ function Projects() {
                         className="projects-button"
                         id="chevronRight"
                         onClick={shiftRight}
-                    >
-                        <img src={chevronRight} alt="" loading="lazy" />
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                shiftRight();
+                            }
+                          }}
+                        >
+                        <img
+                            src={chevronRight}
+                            alt="Move slider right"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
                 <div className="projects-carousel-nav">

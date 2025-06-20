@@ -33,13 +33,15 @@ section {
     z-index: 1;
 }
 
-.navigation-icon:hover {
+.navigation-icon:hover,
+.navigation-icon:focus-visible {
     transform: scale(1.25);
     opacity: 1;
     cursor: pointer;
 }
 
-.navigation-icon:hover:after {
+.navigation-icon:hover:after,
+.navigation-icon:focus-visible:after {
     background-color: black;
     border-radius: 4px;
     color: white;

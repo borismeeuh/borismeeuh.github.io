@@ -1,13 +1,13 @@
-import pfp from "../images/IntroProfileImg.jpeg"
+import pfp from "../images/IntroProfileImg.jpeg";
 
-function Intro() {
+function Intro() {    
     return (
         <div className="intro" id="intro">
             <div className="intro-content">
                 <div className="intro-col-left">
                     <h1 className="title">Welcome to my portfolio page!</h1>
                     <p className="paragraph">
-                        Hey, I'm Boris Kamstra, a graduate from Hogeschool
+                        Hey, I'm Boris, a graduate from Hogeschool
                         Zeeland where I studied IT. I've been passionate about
                         frontend development since the start of my education. I
                         have successfully completed my graduation project at{" "}
@@ -15,17 +15,19 @@ function Intro() {
                             href="https://www.xsarus.nl/"
                             target="_blank"
                             className="link"
+                            rel="noreferrer"
                         >
                             XSARUS
                         </a>
                         , where I explored the possibilities of turning an
                         existing Order Management System into a Software as a
-                        Service product. I have started my work as a juniorA
+                        Service product. I have started my work as a junior
                         front-end developer at{" "}
                         <a
                             href="https://www.webnl.nl/"
                             target="_blank"
                             className="link"
+                            rel="noreferrer"
                         >
                             WebNL
                         </a>{" "}
@@ -33,10 +35,10 @@ function Intro() {
                     </p>
                 </div>
                 <div className="intro-col-right">
-                    <img 
-                        className="intro-img"  
-                        src={pfp} 
-                        alt="Profile picture" 
+                    <img
+                        className="intro-img"
+                        src={pfp}
+                        alt="Profiel afbeelding"
                         loading="lazy"
                     />
                 </div>
