@@ -20,7 +20,7 @@ function About_website() {
                         <div className="about-content-image">
                             <img
                                 src={Responsivity}
-                                alt="Responsivity"
+                                alt="Mockup of the site on different screen sizes"
                                 loading="lazy"
                             ></img>
                         </div>
@@ -29,7 +29,7 @@ function About_website() {
                         <div className="about-content-image">
                             <img
                                 src={LighthouseReport}
-                                alt="Responsivity"
+                                alt="Perfect score in Google Lighthouse"
                                 loading="lazy"
                             ></img>
                         </div>

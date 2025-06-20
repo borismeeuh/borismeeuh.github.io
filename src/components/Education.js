@@ -9,7 +9,7 @@ function Education() {
         <div className="education" id="education">
             <div className="education-background">
                 <img 
-                    alt="Background Image" 
+                    alt="Office with laptop and paper" 
                     loading="lazy"
                     src={background} 
                 />

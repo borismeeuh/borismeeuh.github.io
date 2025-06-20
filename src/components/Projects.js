@@ -11,6 +11,7 @@ function Projects() {
             tech: ["Babylon.js", "Vue", "Javascript"],
             image: "Solar System.png",
             link: "https://borismeeuh.github.io/solar-system/",
+            alt: "A project modelling the solar system using Babylon.js and Vue.js.",
         },
         {
             title: "GO For IT",
@@ -19,6 +20,7 @@ function Projects() {
             tech: ["Vue", "SCSS", "JavaScript"],
             image: "gfi.png",
             link: "https://gfi.dev/home",
+            alt: "Website made to promote an IT event."
         },
         {
             title: "Graduation Assignment",
@@ -33,6 +35,7 @@ function Projects() {
             tech: ["Svelte", "JavaScript"],
             image: "Weather App.png",
             link: "https://challanges-svelte.vercel.app/",
+            alt: "App that returns the weather in a given place.",
         },
         {
             title: "Old Web Portfolio",
@@ -40,6 +43,7 @@ function Projects() {
                 "My first web portfolio, built using HTML, CSS, JavaScript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
             tech: ["HTML", "CSS", "JavaScript", "Laravel"],
             image: "First Portfolio.png",
+            alt: "My first portfolio website."
         },
     ];
 
@@ -185,7 +189,7 @@ function Projects() {
                                             className="projects-card-image"
                                             src={currentImage}
                                             loading="lazy"
-                                            alt="Project schermafbeelding"
+                                            alt={currentItem.alt}
                                         />
                                     </a>
                                 ) : (
@@ -193,7 +197,7 @@ function Projects() {
                                         className="projects-card-image"
                                         src={currentImage}
                                         loading="lazy"
-                                        alt="Project schermafbeelding"
+                                        alt={currentItem.alt}
                                     />
                                 )
                             ) : (

@@ -38,7 +38,7 @@ function Intro() {
                     <img
                         className="intro-img"
                         src={pfp}
-                        alt="Profiel afbeelding"
+                        alt="Profile"
                         loading="lazy"
                     />
                 </div>
