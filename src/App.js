@@ -66,6 +66,7 @@ function App() {
     return (
         <div className="wrapper">
             <Hero></Hero>
+            <Navigation></Navigation>
             <div className="app">
                 <Intro></Intro>
                 <Education></Education>
@@ -75,7 +76,6 @@ function App() {
                 {/* <Socials></Socials> */}
                 <Contact></Contact>
             </div>
-            <Navigation></Navigation>
         </div>
     );
 }

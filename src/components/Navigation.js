@@ -96,16 +96,20 @@ function Navigation() {
                     'a[href], button, textarea, input, select, details,[tabindex]:not([tabindex="-1"])'
                 );
 
-                const focusableElements = Array.from(focusableElementsCollection).filter((el) => {
+                const focusableElements = Array.from(
+                    focusableElementsCollection
+                ).filter((el) => {
                     const style = window.getComputedStyle(el);
-                  
+
                     const isVisible =
-                      style.display !== 'none' &&
-                      style.visibility !== 'hidden' &&
-                      style.opacity !== '0';
-                  
-                    return !el.disabled && el.offsetParent !== null && isVisible;
-                  });   
+                        style.display !== "none" &&
+                        style.visibility !== "hidden" &&
+                        style.opacity !== "0";
+
+                    return (
+                        !el.disabled && el.offsetParent !== null && isVisible
+                    );
+                });
 
                 const isInViewport = (el) => {
                     const rect = el.getBoundingClientRect();
@@ -122,7 +126,7 @@ function Navigation() {
                     );
                 };
 
-                const firstVisible = focusableElements.find(isInViewport);                
+                const firstVisible = focusableElements.find(isInViewport);
 
                 if (firstVisible) {
                     firstVisible.focus();
@@ -142,7 +146,7 @@ function Navigation() {
             <ScrollIntoView selector="#hero">
                 <div
                     id="nav-hero"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "hero" ? "navigation-icon-active" : ""
                     }`}
@@ -155,7 +159,7 @@ function Navigation() {
             <ScrollIntoView selector="#intro">
                 <div
                     id="nav-intro"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "intro"
                             ? "navigation-icon-active"
@@ -172,7 +176,7 @@ function Navigation() {
             <ScrollIntoView selector="#education">
                 <div
                     id="nav-education"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "education"
                             ? "navigation-icon-active"
@@ -191,7 +195,7 @@ function Navigation() {
             <ScrollIntoView selector="#skills">
                 <div
                     id="nav-skills"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "skills"
                             ? "navigation-icon-active"
@@ -210,7 +214,7 @@ function Navigation() {
             <ScrollIntoView selector="#about">
                 <div
                     id="nav-about"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "about"
                             ? "navigation-icon-active"
@@ -227,7 +231,7 @@ function Navigation() {
             <ScrollIntoView selector="#projects">
                 <div
                     id="nav-projects"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "projects"
                             ? "navigation-icon-active"
@@ -246,7 +250,7 @@ function Navigation() {
             <ScrollIntoView selector="#contact">
                 <div
                     id="nav-contact"
-                    tabIndex="1"
+                    tabIndex="0"
                     className={`navigation-icon ${
                         sectionInView === "contact"
                             ? "navigation-icon-active"

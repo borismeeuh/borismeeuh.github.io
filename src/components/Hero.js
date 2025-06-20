@@ -31,7 +31,7 @@ function Hero() {
             </div>
             <div className="hero-content">
                 <div className="hero-logo">
-                    <img src={Logo} alt="Logo" loading="lazy" />
+                    <img src={Logo} alt="Logo" />
                 </div>
                 <div className="hero-text">
                     <div className="hero-title title">
@@ -41,7 +41,7 @@ function Hero() {
                 </div>
                 <div
                     className="hero-icon"
-                    tabIndex="1"
+                    tabIndex=""
                     onKeyDown={navigateToSection}
                 >
                     <ScrollIntoView selector="#intro">
