@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import chevronLeft from "../images/svg/chevron-left.svg";
 import chevronRight from "../images/svg/chevron-right.svg";
-import { useState, useEffect } from "react";
+import noImage from "../images/svg/no-image.svg";
 
 function Projects() {
     const items = [
@@ -20,7 +21,7 @@ function Projects() {
             tech: ["Vue", "SCSS", "JavaScript"],
             image: "gfi.png",
             link: "https://gfi.dev/home",
-            alt: "Website made to promote an IT event."
+            alt: "Website made to promote an IT event.",
         },
         {
             title: "Graduation Assignment",
@@ -43,7 +44,7 @@ function Projects() {
                 "My first web portfolio, built using HTML, CSS, JavaScript, and Laravel. It features a light/dark mode toggle, a CRUD system for entering grades, a login system, and password security.",
             tech: ["HTML", "CSS", "JavaScript", "Laravel"],
             image: "First Portfolio.png",
-            alt: "My first portfolio website."
+            alt: "My first portfolio website.",
         },
     ];
 
@@ -202,7 +203,12 @@ function Projects() {
                                 )
                             ) : (
                                 <div className="projects-image-unavailable">
-                                    <div>No image available</div>
+                                    {" "}
+                                    <img
+                                        src={noImage}
+                                        alt="Unavailable"
+                                        loading="lazy"
+                                    />
                                 </div>
                             )}
                         </div>

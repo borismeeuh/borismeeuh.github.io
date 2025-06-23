@@ -11,7 +11,7 @@ import sass from "../images/logos/sass-icon.svg";
 function Icons() {
     return (
         <div className="icons">
-            <h2 className="subtitle">What I've worked with</h2>
+            <h2 className="subtitle">Some of what I've worked with</h2>
             <div className="icons-container">
                 <div
                     className="icon"
