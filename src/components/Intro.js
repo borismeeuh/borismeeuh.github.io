@@ -31,7 +31,7 @@ function Intro() {
                         >
                             WebNL
                         </a>{" "}
-                        at the beginning of August of 2024.
+                        at the start of August of 2024.
                     </p>
                 </div>
                 <div className="intro-col-right">
