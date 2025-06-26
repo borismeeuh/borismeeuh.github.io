@@ -73,10 +73,9 @@ function Projects() {
         );
     });
 
-    let currentItem = items[itemNumber];
-    let currentImage = currentItem.image
-        ? require("../images/" + currentItem.image)
-        : undefined;
+    const imagesArray = items.map((item) =>
+        item.image ? require("../images/" + item.image) : undefined
+    );
 
     useEffect(() => {
         if (itemNumber <= 0) {
@@ -92,6 +91,37 @@ function Projects() {
                 "visible";
         }
     });
+
+    useEffect(() => {
+        const allCards = document.querySelectorAll(".projects-card");
+
+        allCards.forEach((card) => {
+            card.classList.remove(
+                "projects-card-fade-in",
+                "projects-card-fade-out"
+            );
+
+            const anchor = card?.querySelector("a");
+
+            if (anchor) {
+                anchor.tabIndex = -1;
+            }
+        });
+
+        const currentCard = document.querySelector(
+            `.projects-card-${itemNumber}`
+        );
+
+        if (currentCard) {
+            currentCard.classList.add("projects-card-fade-in");
+
+            const anchor = currentCard?.querySelector("a");
+
+            if (anchor) {
+                anchor.tabIndex = 0;
+            }
+        }
+    }, [itemNumber]);
 
     function removeCurrentItemClass() {
         let navItems = document.getElementsByClassName(
@@ -121,7 +151,10 @@ function Projects() {
         document.getElementById("chevronRight").style.visibility = "visible";
 
         if (itemNumber > 0) {
-            setItemNumber(itemNumber - 1);
+            setItemNumber((oldVal) => {
+                const newVal = oldVal - 1;
+                return newVal;
+            });
         } else {
             document.getElementById("chevronLeft").style.visibility = "hidden";
         }
@@ -129,8 +162,12 @@ function Projects() {
 
     function shiftRight() {
         document.getElementById("chevronLeft").style.visibility = "visible";
+
         if (itemNumber < items.length - 1) {
-            setItemNumber(itemNumber + 1);
+            setItemNumber((oldVal) => {
+                const newVal = oldVal + 1;
+                return newVal;
+            });
         } else {
             document.getElementById("chevronRight").style.visibility = "hidden";
         }
@@ -161,58 +198,70 @@ function Projects() {
                         />
                     </div>
 
-                    <div className="projects-card">
-                        <div className="projects-card-left">
-                            <div className="title">{currentItem.title}</div>
-                            <div className="paragraph">
-                                {currentItem.paragraph}
-                            </div>
-                            <div className="projects-card-tech">
-                                {currentItem.tech.map((item, key) => (
-                                    <span
-                                        className="projects-tech-tag"
-                                        key={key}
-                                    >
-                                        {item}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="projects-card-right">
-                            {currentImage !== undefined ? (
-                                currentItem.link ? (
-                                    <a
-                                        href={currentItem.link}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <img
-                                            className="projects-card-image"
-                                            src={currentImage}
-                                            loading="lazy"
-                                            alt={currentItem.alt}
-                                        />
-                                    </a>
-                                ) : (
-                                    <img
-                                        className="projects-card-image"
-                                        src={currentImage}
-                                        loading="lazy"
-                                        alt={currentItem.alt}
-                                    />
-                                )
-                            ) : (
-                                <div className="projects-image-unavailable">
-                                    {" "}
-                                    <img
-                                        src={noImage}
-                                        alt="Unavailable"
-                                        loading="lazy"
-                                    />
+                    {items.map((item, index) => {
+                        return (
+                            <div
+                                className={`projects-card projects-card-${index} ${
+                                    index === itemNumber
+                                        ? "projects-card-fade-in"
+                                        : ""
+                                }`}
+                                key={index}
+                            >
+                                <div className="projects-card-left">
+                                    <div className="title">{item.title}</div>
+                                    <div className="paragraph">
+                                        {item.paragraph}
+                                    </div>
+                                    <div className="projects-card-tech">
+                                        {item.tech.map(
+                                            (techItem, techIndex) => (
+                                                <span
+                                                    className="projects-tech-tag"
+                                                    key={techIndex}
+                                                >
+                                                    {techItem}
+                                                </span>
+                                            )
+                                        )}
+                                    </div>
                                 </div>
-                            )}
-                        </div>
-                    </div>
+                                <div className="projects-card-right">
+                                    {imagesArray[index] !== undefined ? (
+                                        item.link ? (
+                                            <a
+                                                href={item.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="projects-card-image"
+                                            >
+                                                <img
+                                                    src={imagesArray[index]}
+                                                    loading="lazy"
+                                                    alt={item.alt}
+                                                />
+                                            </a>
+                                        ) : (
+                                            <img
+                                                className="projects-card-image"
+                                                src={imagesArray[index]}
+                                                loading="lazy"
+                                                alt={item.alt}
+                                            />
+                                        )
+                                    ) : (
+                                        <div className="projects-image-unavailable">
+                                            <img
+                                                src={noImage}
+                                                alt="Unavailable"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        );
+                    })}
 
                     <div
                         className="projects-button"

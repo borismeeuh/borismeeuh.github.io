@@ -53,13 +53,33 @@
     cursor: pointer;
 }
 
+.projects-cards {
+    height: 100%;
+    position: relative;
+    width: 90%;
+}
+
 .projects-card {
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
+    left: 50%;
     max-height: none;
-    position: relative;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
     width: 90%;
+}
+
+.projects-card-fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.projects-card-fade-in {
+    opacity: 1;
+    z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -138,6 +158,11 @@
 .projects-card-image {
     max-height: 350px;
     max-width: 100%;
+}
+
+.projects-card-image img {
+    height: 100%;
+    width: 100%;
 }
 
 .projects-image-unavailable {
