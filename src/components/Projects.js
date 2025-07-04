@@ -173,6 +173,32 @@ function Projects() {
         }
     }
 
+    const [touchStartX, setTouchStartX] = useState(null);
+    const [touchEndX, setTouchEndX] = useState(null);
+
+    const handleTouchStart = (e) => {
+        setTouchStartX(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        setTouchEndX(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (!touchStartX || !touchEndX) return;
+
+        const deltaX = touchStartX - touchEndX;
+
+        if (deltaX > 50) {
+            shiftRight();
+        } else if (deltaX < -50) {
+            shiftLeft();
+        }
+
+        setTouchStartX(null);
+        setTouchEndX(null);
+    };
+
     return (
         <section className="projects" id="projects">
             <div className="projects-wrapper">
@@ -196,7 +222,12 @@ function Projects() {
                         />
                     </div>
 
-                    <div className="projects-cards-wrapper">
+                    <div
+                        className="projects-cards-wrapper"
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}
+                    >
                         {items.map((item, index) => {
                             return (
                                 <div
