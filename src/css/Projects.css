@@ -184,6 +184,12 @@
     width: 100%;
 }
 
+.projects-card-image:focus-visible {
+    border-radius: 2px;
+    outline: white solid 1px;
+    outline-offset: -1px;
+}
+
 .projects-image-unavailable {
     display: flex;
     justify-content: center;
