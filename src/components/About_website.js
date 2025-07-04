@@ -4,7 +4,7 @@ import Responsivity from "../images/Responsive Expample.png";
 
 function About_website() {
     return (
-        <div className="about" id="about">
+        <section className="about" id="about">
             <div className="about-wrapper">
                 <h1 className="title">About This Website</h1>
                 <div className="about-content">
@@ -69,7 +69,7 @@ function About_website() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

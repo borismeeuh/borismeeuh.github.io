@@ -174,11 +174,9 @@ function Projects() {
     }
 
     return (
-        <div className="projects" id="projects">
+        <section className="projects" id="projects">
             <div className="projects-wrapper">
-                <div>
-                    <h1 className="title">Projects</h1>
-                </div>
+                <h1 className="title">Projects</h1>
                 <div className="projects-carousel">
                     <div
                         className="projects-button"
@@ -198,70 +196,74 @@ function Projects() {
                         />
                     </div>
 
-                    {items.map((item, index) => {
-                        return (
-                            <div
-                                className={`projects-card projects-card-${index} ${
-                                    index === itemNumber
-                                        ? "projects-card-fade-in"
-                                        : ""
-                                }`}
-                                key={index}
-                            >
-                                <div className="projects-card-left">
-                                    <div className="title">{item.title}</div>
-                                    <div className="paragraph">
-                                        {item.paragraph}
+                    <div className="projects-cards-wrapper">
+                        {items.map((item, index) => {
+                            return (
+                                <div
+                                    className={`projects-card projects-card-${index} ${
+                                        index === itemNumber
+                                            ? "projects-card-fade-in"
+                                            : ""
+                                    }`}
+                                    key={index}
+                                >
+                                    <div className="projects-card-left">
+                                        <div className="title">
+                                            {item.title}
+                                        </div>
+                                        <div className="paragraph">
+                                            {item.paragraph}
+                                        </div>
+                                        <div className="projects-card-tech">
+                                            {item.tech.map(
+                                                (techItem, techIndex) => (
+                                                    <span
+                                                        className="projects-tech-tag"
+                                                        key={techIndex}
+                                                    >
+                                                        {techItem}
+                                                    </span>
+                                                )
+                                            )}
+                                        </div>
                                     </div>
-                                    <div className="projects-card-tech">
-                                        {item.tech.map(
-                                            (techItem, techIndex) => (
-                                                <span
-                                                    className="projects-tech-tag"
-                                                    key={techIndex}
+                                    <div className="projects-card-right">
+                                        {imagesArray[index] !== undefined ? (
+                                            item.link ? (
+                                                <a
+                                                    href={item.link}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    className="projects-card-image"
                                                 >
-                                                    {techItem}
-                                                </span>
-                                            )
-                                        )}
-                                    </div>
-                                </div>
-                                <div className="projects-card-right">
-                                    {imagesArray[index] !== undefined ? (
-                                        item.link ? (
-                                            <a
-                                                href={item.link}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="projects-card-image"
-                                            >
+                                                    <img
+                                                        src={imagesArray[index]}
+                                                        loading="lazy"
+                                                        alt={item.alt}
+                                                    />
+                                                </a>
+                                            ) : (
                                                 <img
+                                                    className="projects-card-image"
                                                     src={imagesArray[index]}
                                                     loading="lazy"
                                                     alt={item.alt}
                                                 />
-                                            </a>
+                                            )
                                         ) : (
-                                            <img
-                                                className="projects-card-image"
-                                                src={imagesArray[index]}
-                                                loading="lazy"
-                                                alt={item.alt}
-                                            />
-                                        )
-                                    ) : (
-                                        <div className="projects-image-unavailable">
-                                            <img
-                                                src={noImage}
-                                                alt="Unavailable"
-                                                loading="lazy"
-                                            />
-                                        </div>
-                                    )}
+                                            <div className="projects-image-unavailable">
+                                                <img
+                                                    src={noImage}
+                                                    alt="Unavailable"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
 
                     <div
                         className="projects-button"
@@ -287,7 +289,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

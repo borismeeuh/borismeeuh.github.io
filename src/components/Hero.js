@@ -14,7 +14,7 @@ function Hero() {
     };
 
     return (
-        <div className="hero" id="hero">
+        <section className="hero" id="hero">
             <div className="hero-overlay">
                 <div className="planet1">
                     <div className="planet1-ring"></div>
@@ -34,9 +34,9 @@ function Hero() {
                     <img src={Logo} alt="Logo" />
                 </div>
                 <div className="hero-text">
-                    <div className="hero-title title">
+                    <h1 className="hero-title title">
                         Hi, I'm Boris <br /> Welcome!
-                    </div>
+                    </h1>
                     <div className="hero-sub subtitle">Front-End Developer</div>
                 </div>
                 <div
@@ -67,7 +67,7 @@ function Hero() {
                 <span className="shootingStar" id="shoot2"></span>
                 <span className="shootingStar" id="shoot3"></span>
             </div>
-        </div>
+        </section>
     );
 }
 

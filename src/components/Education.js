@@ -6,7 +6,7 @@ import travel from "../images/svg/travel-icon.svg";
 
 function Education() {
     return (
-        <div className="education" id="education">
+        <section className="education" id="education">
             <div className="education-background">
                 <img 
                     alt="Office with laptop and paper" 
@@ -68,7 +68,7 @@ function Education() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

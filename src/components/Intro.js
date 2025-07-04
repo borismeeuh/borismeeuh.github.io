@@ -2,7 +2,7 @@ import pfp from "../images/IntroProfileImg.jpeg";
 
 function Intro() {    
     return (
-        <div className="intro" id="intro">
+        <section className="intro" id="intro">
             <div className="intro-content">
                 <div className="intro-col-left">
                     <h1 className="title">Welcome to my portfolio page!</h1>
@@ -43,7 +43,7 @@ function Intro() {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

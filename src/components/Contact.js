@@ -15,7 +15,7 @@ function Contact() {
     }
 
     return (
-        <div className="contact" id="contact">
+        <section className="contact" id="contact">
             <div className="contact-animation-wrapper">
                 <div className="contact-animation-blob1"></div>
                 <div className="contact-animation-blob2"></div>
@@ -72,7 +72,7 @@ function Contact() {
                     </button>
                 </form>
             </div>
-        </div>
+        </section>
     );
 }
 
