@@ -54,19 +54,20 @@ function Hero() {
                     </ScrollIntoView>
                 </div>
             </div>
-            <div className="stars">
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="star"></span>
-                <span className="shootingStar" id="shoot1"></span>
-                <span className="shootingStar" id="shoot2"></span>
-                <span className="shootingStar" id="shoot3"></span>
+            <div className="hero-stars">
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-star"></span>
+                <span className="hero-shootingStar" id="shoot1"></span>
+                <span className="hero-shootingStar" id="shoot2"></span>
+                <span className="hero-shootingStar" id="shoot3"></span>
             </div>
+
         </section>
     );
 }
