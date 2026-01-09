@@ -36,35 +36,37 @@
     position: relative;
 }
 
-.icon::before,
-.icon::after {
-    border-radius: 50%;
-    border: 2px solid transparent;
-    box-sizing: inherit;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
+@media (prefers-reduced-motion: no-preference) {
+    .icon::before,
+    .icon::after {
+        border-radius: 50%;
+        border: 2px solid transparent;
+        box-sizing: inherit;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 
-.icon::before {
-    border: 2px solid transparent;
-}
+    .icon::before {
+        border: 2px solid transparent;
+    }
 
-.icon:hover::before {
-    border-bottom-color: var(--circleColour);
-    border-right-color: var(--circleColour);
-    border-top-color: var(--circleColour);
-    border-left-color: var(--circleColour);
-    transition: border-top-color 0.01s linear, border-right-color 0.1s linear 0.01s, border-bottom-color 0.01s linear 0.20s, border-left-color 0.01s linear .30s;
-}
+    .icon:hover::before {
+        border-bottom-color: var(--circleColour);
+        border-right-color: var(--circleColour);
+        border-top-color: var(--circleColour);
+        border-left-color: var(--circleColour);
+        transition: border-top-color 0.01s linear, border-right-color 0.1s linear 0.01s, border-bottom-color 0.01s linear 0.20s, border-left-color 0.01s linear .30s;
+    }
 
-.icon:hover::after {
-    border-top: 2px solid var(--circleColour);
-    transform: rotate(270deg);
-    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+    .icon:hover::after {
+        border-top: 2px solid var(--circleColour);
+        transform: rotate(270deg);
+        transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+    }
 }
 
 .icon img {
