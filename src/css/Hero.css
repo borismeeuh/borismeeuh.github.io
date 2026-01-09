@@ -97,6 +97,29 @@
     opacity: .5;
 }
 
+.hero-social-icons {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    height: fit-content;
+    justify-content: center;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.hero-social-icon {
+    height: 32px;
+    opacity: .6;
+    transition: opacity .3s linear;
+}
+
+.hero-social-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
 .planet1 {
     animation: planet 10s linear infinite;
     aspect-ratio: 1/1;

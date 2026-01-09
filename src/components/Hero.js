@@ -1,4 +1,6 @@
 import ChevronDown from "../images/svg/chevron-down.svg";
+import LinkedInLogo from "../images/svg/linkedin-icon.svg";
+import GithubLogo from "../images/svg/github-icon.svg";
 import Logo from "../images/logos/thin-hexagon-white.svg";
 import ScrollIntoView from "react-scroll-into-view";
 import Wave from "../images/svg/wave-single.svg";
@@ -27,7 +29,7 @@ function Hero() {
                 </div>
             </div>
             <div className="hero-wave">
-                <img src={Wave} alt="Wave" loading="lazy" />
+                <img src={Wave} alt="Wave" />
             </div>
             <div className="hero-content">
                 <div className="hero-logo">
@@ -49,7 +51,6 @@ function Hero() {
                             src={ChevronDown}
                             alt="Scroll down"
                             className="hero-icon-svg"
-                            loading="lazy"
                         />
                     </ScrollIntoView>
                 </div>
@@ -67,7 +68,10 @@ function Hero() {
                 <span className="hero-shootingStar" id="shoot2"></span>
                 <span className="hero-shootingStar" id="shoot3"></span>
             </div>
-
+            <div className="hero-social-icons">
+                <a href="https://linkedin.com/in/boris-kamstra-201005209" target="_blank" rel="noreferrer"><img className="hero-social-icon" src={LinkedInLogo} alt="LinkedIn logo"/></a>
+                <a href="https://github.com/borismeeuh" target="_blank" rel="noreferrer"><img className="hero-social-icon" src={GithubLogo} alt="Github logo"/></a>
+            </div>
         </section>
     );
 }
