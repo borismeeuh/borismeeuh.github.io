@@ -89,7 +89,7 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
-								Trainee Front-End Developer at
+								Trainee Front-End Developer at{" "}
 								<a
 									href="https://www.webnl.nl/"
 									className="link"
