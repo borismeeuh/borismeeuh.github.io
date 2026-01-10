@@ -69,8 +69,8 @@ function Hero() {
                 <span className="hero-shootingStar" id="shoot3"></span>
             </div>
             <div className="hero-social-icons">
-                <a href="https://linkedin.com/in/boris-kamstra-201005209" target="_blank" rel="noopener noreferrer"><img className="hero-social-icon" src={LinkedInLogo} alt="LinkedIn logo"/></a>
-                <a href="https://github.com/borismeeuh" target="_blank" rel="noopener noreferrer"><img className="hero-social-icon" src={GithubLogo} alt="Github logo"/></a>
+                <a tabIndex="1" href="https://linkedin.com/in/boris-kamstra-201005209" target="_blank" rel="noopener noreferrer"><img className="hero-social-icon" src={LinkedInLogo} alt="LinkedIn logo"/></a>
+                <a tabIndex="1" href="https://github.com/borismeeuh" target="_blank" rel="noopener noreferrer"><img className="hero-social-icon" src={GithubLogo} alt="Github logo"/></a>
             </div>
         </section>
     );
