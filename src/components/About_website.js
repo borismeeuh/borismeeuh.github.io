@@ -31,7 +31,7 @@ function About_website() {
                         <div className="about-content-image">
                             <img
                                 src={LighthouseReport}
-                                alt="Perfect score in Google Lighthouse"
+                                alt="Perfect scores in Google Lighthouse"
                                 loading="lazy"
                             ></img>
                         </div>
@@ -53,7 +53,7 @@ function About_website() {
                             <span className="paragraph">
                                 Special attention has been given to implementing
                                 accessibility (a11y) features throughout the
-                                site. Key features such as font size, colour
+                                site. Key features such as reduced motion support, font size, colour
                                 contrast, keyboard navigation, and descriptive
                                 alt text for images help ensure that the website
                                 remains intuitive and usable for all users.
