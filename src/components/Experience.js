@@ -17,9 +17,7 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
-								Front-End Developer at
-							</span>
-							<span className="paragraph">
+								Front-End Developer at{" "}
 								<a
 									href="https://www.vollan.nl/"
 									className="link"
@@ -43,9 +41,7 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
-								Junior Front-End Developer at
-							</span>
-							<span className="paragraph">
+								Junior Front-End Developer at{" "}
 								<a
 									href="https://www.webnl.nl/"
 									className="link"
@@ -69,9 +65,7 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
-								Intern Front-End Developer at
-							</span>
-							<span className="paragraph">
+								Intern Front-End Developer at{" "}
 								<a
 									href="https://www.xsarus.nl/"
 									className="link"
@@ -96,8 +90,6 @@ function Experience() {
 						<div className="experience-text">
 							<span className="paragraph">
 								Trainee Front-End Developer at
-							</span>
-							<span className="paragraph">
 								<a
 									href="https://www.webnl.nl/"
 									className="link"
@@ -122,8 +114,6 @@ function Experience() {
 						<div className="experience-text">
 							<span className="paragraph">
 								Intern Front-End Developer at
-							</span>
-							<span className="paragraph">
 								{" "}
 								<a
 									href="https://www.webnl.nl/"
