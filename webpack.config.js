@@ -1,6 +1,6 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); 
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
@@ -9,9 +9,10 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         filename: "bundle.min.js",
-        path: path.resolve(__dirname, "docs/static/js"),
-        publicPath: "/docs/static",
+        path: path.resolve(__dirname, "docs"),
+        publicPath: "./",
         clean: true,
+        assetModuleFilename: 'static/media/[name].[hash][ext]',
     },
     module: {
         rules: [
@@ -72,7 +73,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "../css/styles.min.css"
+            filename: "static/css/styles.min.css"
         })
     ]
 };
