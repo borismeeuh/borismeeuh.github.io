@@ -42,7 +42,7 @@ function Intro() {
 						>
 							Vollan
 						</a>
-						. Test
+						. Test teset
 					</p>
 				</div>
 				<div className="intro-col-right">
