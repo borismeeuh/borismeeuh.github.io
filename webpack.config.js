@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -80,6 +81,15 @@ module.exports = {
             template: "./public/index.html",
             filename: "index.html",
             inject: "body",
+            favicon: "./public/bold-hexagon-black.svg",
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: "public/bold-hexagon-black.svg",
+                    to: "favicon.ico"
+                }
+            ]
         }),
     ]
 };
