@@ -6,6 +6,14 @@ import noImage from "../images/svg/no-image.svg";
 function Projects() {
 	const items = [
 		{
+			title: "Book Blog",
+			paragraph: "A blog where I publish articles about books that I've read.",
+			tech: ["Next.js", "TypeScript", "Tailwind"],
+			image: "book-blog.jpg",
+			link: "https://borismeeuh-book-blog.vercel.app/nl",
+			alt: "Screenshot of the landing page of my book blog.",
+		},
+		{
 			title: "Bonsai Garden",
 			paragraph: "A project for experimenting with GSAP and Tailwind.",
 			tech: ["Vue", "TypeScript", "Tailwind", "GSAP"],
@@ -82,7 +90,7 @@ function Projects() {
 	});
 
 	const imagesArray = items.map((item) =>
-		item.image ? require("../images/" + item.image) : undefined
+		item.image ? require("../images/projects/" + item.image) : undefined
 	);
 
 	useEffect(() => {
