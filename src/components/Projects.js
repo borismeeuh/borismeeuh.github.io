@@ -7,8 +7,8 @@ function Projects() {
 	const items = [
 		{
 			title: "Book Blog",
-			paragraph: "A blog where I publish articles about books that I've read.",
-			tech: ["Next.js", "TypeScript", "Tailwind"],
+			paragraph: "A blog where I publish articles about books that I've read. The site is a work in progress.",
+			tech: ["React", "Next.js", "TypeScript", "Tailwind"],
 			image: "book-blog.jpg",
 			link: "https://borismeeuh-book-blog.vercel.app/nl",
 			alt: "Screenshot of the landing page of my book blog.",
