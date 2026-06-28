@@ -33,7 +33,7 @@ function Intro() {
 						</a>{" "}
 						at the start of August of 2024. Since the beginning of
 						September of 2025, I've been working as a front-end
-						developer at {" "}
+						developer at{" "}
 						<a
 							href="https://www.vollan.nl/"
 							className="link"
@@ -41,6 +41,16 @@ function Intro() {
 							rel="noopener noreferrer"
 						>
 							Vollan
+						</a>
+						. In May, 2026, I made the switch to the IT Service Desk
+						at{" "}
+						<a
+							href="https://www.nn.nl/"
+							className="link"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Nationale Nederlanden
 						</a>
 						.
 					</p>

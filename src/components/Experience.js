@@ -17,6 +17,29 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
+								IT Service Desk at{" "}
+								<a
+									href="https://www.nn.nl/"
+									className="link"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Nationale Nederlanden
+								</a>
+							</span>
+						</div>
+					</li>
+					<li className="experience-list-item">
+						<div>
+							<img
+								className="experience-checkmark"
+								src={checkMark}
+								alt="Check"
+								loading="lazy"
+							/>
+						</div>
+						<div className="experience-text">
+							<span className="paragraph">
 								Front-End Developer at{" "}
 								<a
 									href="https://www.vollan.nl/"
@@ -113,8 +136,7 @@ function Experience() {
 						</div>
 						<div className="experience-text">
 							<span className="paragraph">
-								Intern Front-End Developer at
-								{" "}
+								Intern Front-End Developer at{" "}
 								<a
 									href="https://www.webnl.nl/"
 									className="link"
